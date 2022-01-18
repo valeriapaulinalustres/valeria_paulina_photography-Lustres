@@ -340,14 +340,6 @@ p {
 
 }
 
-.misfavoritas__img {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
 .dulceespera h3 {
     grid-column: 1/2;
     grid-row: 4/5;
@@ -360,12 +352,6 @@ p {
 
 }
 
-.dulceespera__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .reciennacido h3 {
     grid-column: 1/2;
     grid-row: 6/7;
@@ -376,12 +362,6 @@ p {
     grid-column: 1/2;
     grid-row: 7/8;
 
-}
-
-.reciennacido__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 
@@ -397,11 +377,6 @@ p {
 
 }
 
-.bebes__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 .ninios h3 {
     grid-column: 1/2;
@@ -434,13 +409,6 @@ p {
 
 }
 
-.teens__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
 .fineart h3 {
     grid-column: 1/2;
     grid-row: 14/15;
@@ -452,13 +420,6 @@ p {
     grid-row: 15/16;
 
 }
-
-.fineart__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 
 .eventossociales h3 {
     grid-column: 1/2;
@@ -472,13 +433,6 @@ p {
 
 }
 
-.eventossociales__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
 .primeracomunion h3 {
     grid-column: 1/2;
     grid-row: 18/19;
@@ -489,12 +443,6 @@ p {
     grid-column: 1/2;
     grid-row: 19/20;
 
-}
-
-.primeracomunion__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 
