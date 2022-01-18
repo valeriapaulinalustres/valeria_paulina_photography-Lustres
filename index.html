@@ -60,15 +60,35 @@
             </ul>
         </nav>
     </header>
-    <!-- Aquí va la imagen de fondo -->
-    <section class="carrousel__inicio">
-        <img src="./src/assets/image/favorita-nena-atardecer.jpg" alt="Niña en atardecer" width="100%">
-        <img src="./src/assets/image/favorita-nene-flores.jpg" alt="Niño con flores en la mano" width="100%">
-        <img src="./src/assets/image/recien-nacido-bautismo.jpg" alt="Recién nacida con vestido de Bautismo"
-            width="100%">
-        <img src="./src/assets/image/fine-art-nena-chal.jpg" alt="Niña en primer plano" width="100%">
-        <img src="./src/assets/image/nene-manzana.jpg" alt="Niño gaucho comiendo una manzana" width="100%">
-    </section>
+    <!-- Carousel de fondo -->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade carrousel__inicio" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./src/assets/image/favorita-nena-atardecer.jpg" class="d-block w-100" alt="Niña en atardecer">
+            </div>
+            <div class="carousel-item">
+                <img src="./src/assets/image/favorita-nene-flores.jpg" class="d-block w-100" alt="Niño con flores en la mano">
+            </div>
+            <div class="carousel-item">
+                <img src="./src/assets/image/recien-nacido-bautismo.jpg" class="d-block w-100" alt="Recién nacida con vestido de Bautismo">
+            </div>
+            <div class="carousel-item">
+                <img src="./src/assets/image/fine-art-nena-chal.jpg" class="d-block w-100" alt="Niña en primer plano">
+            </div>
+            <div class="carousel-item">
+                <img src="./src/assets/image/nene-manzana.jpg" class="d-block w-100" alt="Niño gaucho comiendo una manzana">
+            </div>
+        </div>
+        <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <footer class="footer-home">
         <!-- links a redes sociales -->
         <section class="footer-iconos-home">
