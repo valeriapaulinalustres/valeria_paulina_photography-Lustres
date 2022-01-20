@@ -295,7 +295,7 @@ p {
 /*Página Galería*/
 .galeria-contenedor {
     display: grid;
-    grid-template: 20px 20px 1500px 20px 1500px 20px 1500px 20px 1500px 20px 1500px 20px 1500px 20px 1500px 20px 1500px 20px 1500px/1fr;
+    grid-template: 20px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px/1fr;
 
 }
 
