@@ -294,9 +294,9 @@ p {
 
 /*Página Galería*/
 .galeria-contenedor {
-    display: grid;
-    grid-template: 20px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px 20px 1340px/1fr;
-
+    
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
 
@@ -327,67 +327,43 @@ p {
 
 }
 
-
-.misfavoritas h3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
+.carrousel-padre{
+    display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: normal;
+}
+.misfavoritas{
+    
     text-align: center;
 }
 
-.misfavoritas {
-    grid-column: 1/2;
-    grid-row: 3/4;
-
-}
-
-.dulceespera h3 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    text-align: center;
-}
 
 .dulceespera {
-    grid-column: 1/2;
-    grid-row: 5/6;
-
-}
-
-.reciennacido h3 {
-    grid-column: 1/2;
-    grid-row: 6/7;
+ 
     text-align: center;
 }
 
-.reciennacido {
-    grid-column: 1/2;
-    grid-row: 7/8;
 
-}
-
-
-.bebes h3 {
-    grid-column: 1/2;
-    grid-row: 8/9;
+.reciennacido  {
+    
     text-align: center;
 }
 
-.bebes {
-    grid-column: 1/2;
-    grid-row: 9/10;
-
-}
 
 
-.ninios h3 {
-    grid-column: 1/2;
-    grid-row: 10/11;
+.bebes  {
+  
     text-align: center;
 }
+
+
 
 .ninios {
-    grid-column: 1/2;
-    grid-row: 11/12;
-
+    
+    text-align: center;
 }
 
 .ninios__img {
@@ -397,53 +373,29 @@ p {
 }
 
 
-.teens h3 {
-    grid-column: 1/2;
-    grid-row: 12/13;
-    text-align: center;
-}
-
 .teens {
-    grid-column: 1/2;
-    grid-row: 13/14;
-
-}
-
-.fineart h3 {
-    grid-column: 1/2;
-    grid-row: 14/15;
+   
     text-align: center;
 }
+
 
 .fineart {
-    grid-column: 1/2;
-    grid-row: 15/16;
-
-}
-
-.eventossociales h3 {
-    grid-column: 1/2;
-    grid-row: 16/17;
+   
     text-align: center;
 }
+
 
 .eventossociales {
-    grid-column: 1/2;
-    grid-row: 17/18;
-
-}
-
-.primeracomunion h3 {
-    grid-column: 1/2;
-    grid-row: 18/19;
+  
     text-align: center;
 }
 
-.primeracomunion {
-    grid-column: 1/2;
-    grid-row: 19/20;
 
+.primeracomunion {
+
+    text-align: center;
 }
+
 
 
 /*volver de Galería*/
