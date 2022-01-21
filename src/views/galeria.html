@@ -58,33 +58,47 @@
         </nav>
     </header>
     <!-- Segundo menú de navegación -->
+
+
+
+
+
+
+
     <div class="galeria-contenedor">
+        <input type="checkbox" id="btn-menu">
+        <label class="label-galeria" for="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+
+        </label>
         <nav class="nav-galeria">
-            <ul class="menu-galeria">
-                <li class="menu-galeria">
+            <ul class="menu-galeria__ul">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#misfavoritas">Mis Favoritas</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#dulceespera">Dulce Espera</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#reciennacido">Recién Nacidos</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#bebes">Bebés</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#ninios">Niños</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#teens">Teens</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#fineart">Fine Art</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#eventossociales">Eventos Sociales</a></li>
-                <li class="menu-galeria">
+                <li class="menu-galeria__li">
                     <a class="menu-galeria__link" href="#primeracomunion">Primera Comunión</a></li>
             </ul>
         </nav>
         <!-- Aquí van los carrouseles -->
-
-        
-        <section>
+     
+        <section class="carrousel-padre">
 
             <!-- Carousel Mis favoritas -->
             <h3 id="misfavoritas" class="misfavoritas">Mis Favoritas</h3>
@@ -107,10 +121,10 @@
                     </div>
                 </div>
             </div>
-    
 
-        <!-- Carousel Dulce Espera -->
-        
+
+            <!-- Carousel Dulce Espera -->
+
             <h3 id="dulceespera" class="dulceespera">Dulce Espera</h3>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -124,11 +138,11 @@
                     </div>
                 </div>
             </div>
-    
 
-        <!-- Carousel Recién nacido -->
 
-        
+            <!-- Carousel Recién nacido -->
+
+
             <h3 id="reciennacido" class="reciennacido">Recién Nacido</h3>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -142,10 +156,10 @@
                     </div>
                 </div>
             </div>
-    
 
-        <!-- Carousel Bebés -->
-        
+
+            <!-- Carousel Bebés -->
+
             <h3 id="bebes" class="bebes">Bebés</h3>
 
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -164,8 +178,8 @@
             </div>
 
 
-        <!-- Carousel Niños -->
-        
+            <!-- Carousel Niños -->
+
             <h3 id="ninios" class="ninios">Niños</h3>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -181,10 +195,10 @@
                     </div>
                 </div>
             </div>
-        
 
-        <!-- Carousel Teens -->
-        
+
+            <!-- Carousel Teens -->
+
             <h3 id="teens" class="teens">Teens</h3>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -197,9 +211,9 @@
                     </div>
                 </div>
             </div>
-        
-        <!-- Carousel Fine Art -->
-    
+
+            <!-- Carousel Fine Art -->
+
             <h3 id="fineart" class="fineart">Fine Art</h3>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -217,10 +231,10 @@
                     </div>
                 </div>
             </div>
-    
 
-        <!-- Carousel Eventos Sociales -->
-    
+
+            <!-- Carousel Eventos Sociales -->
+
             <h3 id="eventossociales" class="eventossociales">Eventos Sociales</h3>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -236,34 +250,39 @@
                     </div>
                 </div>
             </div>
-    
 
-        <!-- Carousel Primera Comunión -->
-        
+
+            <!-- Carousel Primera Comunión -->
+
             <h3 id="primeracomunion" class="primeracomunion">Primera Comunión</h3>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../assets/image/comuion-nena-espalda.jpg" class="d-block w-100" alt="Nena de espaldas en laguna con vestido de Comunión">
+                        <img src="../assets/image/comuion-nena-espalda.jpg" class="d-block w-100"
+                            alt="Nena de espaldas en laguna con vestido de Comunión">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/image/comunion-nena-frente.jpg" class="d-block w-100" alt="Nena vestida de Comunión">
+                        <img src="../assets/image/comunion-nena-frente.jpg" class="d-block w-100"
+                            alt="Nena vestida de Comunión">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/image/comunion-nenes.jpg" class="d-block w-100" alt="Nena y nene vestidos de Comunión">
+                        <img src="../assets/image/comunion-nenes.jpg" class="d-block w-100"
+                            alt="Nena y nene vestidos de Comunión">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/image/comunion-nene-primer-plano.jpg" class="d-block w-100" alt="Nene en primer plano con sombrero">
+                        <img src="../assets/image/comunion-nene-primer-plano.jpg" class="d-block w-100"
+                            alt="Nene en primer plano con sombrero">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/image/comunion-nene.jpg" class="d-block w-100" alt="Niño posando vestido de Comunión">
+                        <img src="../assets/image/comunion-nene.jpg" class="d-block w-100"
+                            alt="Niño posando vestido de Comunión">
                     </div>
                 </div>
             </div>
 
         </section>
-            
-        
+
+
         <!-- Volver -->
         <a class="volver" href="#volver">Volver al menú</a>
     </div>
