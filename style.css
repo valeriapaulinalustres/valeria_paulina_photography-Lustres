@@ -623,7 +623,7 @@ p {
 }
 
 .formulario:focus {
-    width: 500px;
+    width: 80%;
     height: 300px;
 
     font-size: 20px;
@@ -1005,7 +1005,9 @@ z-index: 5;
 
 
     /*Página Contacto*/
-
+.formulario{
+    width: 180px;
+}
     .formulario:focus {
         width: 200px;
         height: 300px;
@@ -1061,6 +1063,9 @@ z-index: 5;
         align-items: center;
     }
 
+.leyenda-boton{
+    display: none;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width:968px) {
