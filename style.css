@@ -105,6 +105,12 @@ display: none;
 
 
 }
+/*
+.label-navbar-home:hover {
+    cursor: pointer;
+
+}
+*/
 .label-navbar{
     display: none;
     width: 25px;
@@ -112,6 +118,19 @@ display: none;
     padding: 10px;
 
 }
+.label-navbar-home{
+    display: none;
+}
+/*
+.label-navbar-home{
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    margin-right: 3%;
+    margin-top: 3%;
+
+}
+*/
 
 h1 {
     font-family: 'Satisfy', cursive;
@@ -816,8 +835,8 @@ p {
 
 .label-navbar-home{
     display: block;
-    align-self: flex-end;
-    position: absolute;
+    
+   
 }
 .nav-home-contenedor {
     margin-top: 0;
@@ -846,10 +865,14 @@ p {
 
 .nav-home__link {
 color: white; 
+font-size: medium;
 
 }
 .nav-home__link:hover{
     background-color: var(--celeste);
+    color: white;
+    font-size: medium;
+    padding-left: 3px;
 }
 #btn-menu-navbar:checked ~ .nav-home-contenedor{
     margin-top: 130px;
@@ -893,6 +916,29 @@ z-index: 5;
 }
 .nav__link{
     color: white;  
+}
+
+/*Página Home*/
+/*
+.body-home{
+    background-image: url("../valeria_paulina_photography-Lustres/src/assets/image/favorita-nena-atardecer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+*/
+.carrousel__inicio {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    z-index: 0;
+
+}
+.footer-home{
+    background-color: var(--celeste);
+}
+.copyright-home{
+    color: white;
 }
 
     /*Página Galería*/
@@ -1092,6 +1138,55 @@ height: 100%;
         justify-content: space-around;
         align-items: center;
     }
+
+/*Navegación Home*/
+
+.label-navbar-home{
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+.nav-home-contenedor {
+    margin-top: 0;
+
+    position: absolute;
+    background-color: var(--rosa);
+    width: 50%;
+    margin-left: -70px;
+    transition: all 0.5s;
+    display: none;
+    align-self: flex-end;
+    padding-top: 20px;
+}
+
+.nav-home-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.nav-home{
+    align-self: flex-end;
+    border-bottom: solid 1px var(--celeste);
+
+}
+
+.nav-home__link {
+color: white; 
+
+}
+.nav-home__link:hover{
+    background-color: var(--celeste);
+}
+#btn-menu-navbar:checked ~ .nav-home-contenedor{
+    margin-top: 130px;
+
+z-index: 5;
+    display: block;
+}
+
 
 
     /*Página Galería*/
