@@ -97,30 +97,35 @@
     list-style: none;
 
 }
-#btn-menu-navbar{
-display: none;
+
+#btn-menu-navbar {
+    display: none;
 }
+
 .label-navbar:hover {
     cursor: pointer;
 
 
 }
+
 /*
 .label-navbar-home:hover {
     cursor: pointer;
 
 }
 */
-.label-navbar{
+.label-navbar {
     display: none;
     width: 25px;
     height: 25px;
     padding: 10px;
 
 }
-.label-navbar-home{
+
+.label-navbar-home {
     display: none;
 }
+
 /*
 .label-navbar-home{
     display: block;
@@ -164,7 +169,7 @@ h1 {
 
 .h1-home {
     font-family: 'Satisfy', cursive;
-    color: var(--amarillo-claro);
+    color: var(--amarillo-oscuro);
     font-size: 60px;
     background-color: transparent;
     padding: 5px;
@@ -201,7 +206,7 @@ h1 {
 .header__ph-home {
     background-color: transparent;
     font-family: 'Lora', serif;
-    color: var(--amarillo-claro);
+    color: var(--amarillo-oscuro);
     font-weight: lighter;
     font-size: 20px;
     font-variant: small-caps;
@@ -253,7 +258,7 @@ h1 {
 
 
 .nav-home__link {
-    color: var(--rosa);
+    color: var(--amarillo-claro);
     list-style-type: none;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -304,12 +309,15 @@ p {
     z-index: -1;
 
 }
-.contenedor-celular{
+
+.contenedor-celular {
     display: none;
 }
-.texto-home-celular{
+
+.texto-home-celular {
     display: none;
 }
+
 /*Página Acerca de*/
 .acercade-contenedor__img {
     border-radius: 50%;
@@ -692,7 +700,7 @@ p {
     align-self: flex-start;
     order: 2;
     margin: 5px;
-    background-color: #fffff3; 
+    background-color: #fffff3;
     text-align: center;
 
 }
@@ -775,7 +783,7 @@ p {
 .copyright-home {
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
-    color: #7c776f;
+    color: white;
     background-color: transparent;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -838,95 +846,103 @@ p {
     .header__ph-home {
         font-size: 10px;
     }
-/*Navegación Home*/
 
-.label-navbar-home{
-    display: block;
-    
-   
-}
-.nav-home-contenedor {
-    margin-top: 0;
+    /*Navegación Home*/
 
-    position: absolute;
-    background-color: var(--rosa);
-    width: 50%;
-    margin-left: -70px;
-    transition: all 0.5s;
-    display: none;
-    align-self: flex-end;
-    padding-top: 20px;
-}
+    .label-navbar-home {
+        display: block;
 
-.nav-home-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-}
-.nav-home{
-    align-self: flex-end;
-    border-bottom: solid 1px var(--celeste);
+    }
 
-}
+    .nav-home-contenedor {
+        margin-top: 0;
 
-.nav-home__link {
-color: white; 
-font-size: medium;
+        position: absolute;
+        background-color: var(--rosa);
+        width: 50%;
+        margin-left: -70px;
+        transition: all 0.5s;
+        display: none;
+        align-self: flex-end;
+        padding-top: 20px;
+    }
 
-}
-.nav-home__link:hover{
-    background-color: var(--celeste);
-    color: white;
-    font-size: medium;
-    padding-left: 3px;
-}
-#btn-menu-navbar:checked ~ .nav-home-contenedor{
-    margin-top: 130px;
+    .nav-home-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-z-index: 5;
-    display: block;
-}
- 
-/*Navegación del resto de las páginas*/
-#btn-menu-navbar:checked ~ .nav-contenedor{
-    margin-top: 130px;
+    }
 
-z-index: 5;
-    display: block;
-}
+    .nav-home {
+        align-self: flex-end;
+        border-bottom: solid 1px var(--celeste);
 
-.label-navbar{
-    display: block;
-}
+    }
 
-.nav-contenedor{
-    position: absolute;
-    background-color: var(--rosa);
-    width: 50%;
-    margin-left: -70px;
-    transition: all 0.5s;
-    display: none;
-    align-self: flex-end;
-    padding-top: 20px;
+    .nav-home__link {
+        color: white;
+        font-size: medium;
 
-}
-.nav-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.nav{
-    align-self: flex-end;
-    border-bottom: solid 1px var(--celeste);
-}
-.nav__link{
-    color: white;  
-}
+    }
 
-/*Página Home*/
-/*
+    .nav-home__link:hover {
+        background-color: var(--celeste);
+        color: white;
+        font-size: medium;
+        padding-left: 3px;
+    }
+
+    #btn-menu-navbar:checked~.nav-home-contenedor {
+        margin-top: 130px;
+
+        z-index: 5;
+        display: block;
+    }
+
+    /*Navegación del resto de las páginas*/
+    #btn-menu-navbar:checked~.nav-contenedor {
+        margin-top: 130px;
+
+        z-index: 5;
+        display: block;
+    }
+
+    .label-navbar {
+        display: block;
+    }
+
+    .nav-contenedor {
+        position: absolute;
+        background-color: var(--rosa);
+        width: 50%;
+        margin-left: -70px;
+        transition: all 0.5s;
+        display: none;
+        align-self: flex-end;
+        padding-top: 20px;
+
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .nav {
+        align-self: flex-end;
+        border-bottom: solid 1px var(--celeste);
+    }
+
+    .nav__link {
+        color: white;
+    }
+
+    /*Página Home*/
+    /*
 .body-home{
     background-image: url("../valeria_paulina_photography-Lustres/src/assets/image/favorita-nena-atardecer.jpg");
     background-repeat: no-repeat;
@@ -935,51 +951,55 @@ z-index: 5;
 
 }
 */
-.carrousel__inicio {
-    grid-column: 1/3;
-    grid-row: 2/3;
-    z-index: 0;
+    .carrousel__inicio {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        z-index: 0;
 
-}
-.footer-home{
-    background-color: var(--celeste);
-}
-.copyright-home{
-    color: white;
-}
+    }
 
-.contenedor-celular{
-    display: block;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url("../valeria_paulina_photography-Lustres/src/assets/image/favorita-nena-atardecer.jpg");
-    background-repeat: no-repeat;
-    background-size: initial;
-    background-position-x: -900px;
-    background-attachment: fixed;
-    margin-top: 10px;
-    height: 500px;
-    display: flex;
-    align-items: center;
+    .footer-home {
+        background-color: var(--celeste);
+    }
 
-}
-.texto-background-img{
-    margin: 10%;
-    font-size: x-large;
-    
+    .copyright-home {
+        color: white;
+    }
 
-}
-.texto-home-celular{
-    margin: 3%;
-    display: block;
-}
+    .contenedor-celular {
+        display: block;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url("../valeria_paulina_photography-Lustres/src/assets/image/favorita-nena-atardecer.jpg");
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position-x: -900px;
+        background-attachment: fixed;
+        margin-top: 10px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .texto-background-img {
+        margin: 10%;
+        font-size: x-large;
+
+
+    }
+
+    .texto-home-celular {
+        margin: 3%;
+        display: block;
+    }
 
 
     /*Página Galería*/
 
 
-/*Navegación secundaria*/
-.label-galeria {
+    /*Navegación secundaria*/
+    .label-galeria {
         display: block;
 
     }
@@ -1006,21 +1026,21 @@ z-index: 5;
         flex-direction: column;
         justify-content: center;
         padding: 0;
-        
+
 
     }
 
     .menu-galeria__li {
         border-bottom: solid 1px var(--rosa);
         align-self: flex-start;
-        
-        
+
+
     }
 
     .menu-galeria__link {
         color: white;
 
-    
+
 
     }
 
@@ -1089,28 +1109,33 @@ z-index: 5;
     .imagen__contacto {
         opacity: 100%;
         z-index: 0;
-        
+
     }
-    .contacto-main{
+
+    .contacto-main {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-.formulario{
-    width: 80%;
-    height: 50px;
-    opacity: 100%;
-}
+
+    .formulario {
+        width: 80%;
+        height: 50px;
+        opacity: 100%;
+    }
+
     .formulario:focus {
         width: 90%;
         height: 200px;
 
         font-size: 18px;
     }
-.formulario-input{
-    width: 70%;
-    opacity: 100%;
-}
+
+    .formulario-input {
+        width: 70%;
+        opacity: 100%;
+    }
+
     .formulario-input:focus {
         width: 200px;
         height: 30px;
@@ -1128,8 +1153,8 @@ z-index: 5;
     }
 
     .contacto-contenedor-mapa iframe {
-width: 100%;
-height: 100%;
+        width: 100%;
+        height: 100%;
     }
 
     .contacto-contenedor-mapa {
@@ -1173,109 +1198,113 @@ height: 100%;
         align-items: center;
     }
 
-/*Navegación Home*/
+    /*Navegación Home*/
 
-.label-navbar-home{
-    display: block;
-    align-self: flex-end;
-    position: absolute;
-    margin-top: 5%;
-    margin-right: 5%;
-}
-.nav-home-contenedor {
-    margin-top: 0;
+    .label-navbar-home {
+        display: block;
+        align-self: flex-end;
+        position: absolute;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
 
-    position: absolute;
-    background-color: var(--rosa);
-    width: 50%;
-    margin-left: -70px;
-    transition: all 0.5s;
-    display: none;
-    align-self: flex-end;
-    padding-top: 20px;
-}
+    .nav-home-contenedor {
+        margin-top: 0;
 
-.nav-home-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        position: absolute;
+        background-color: var(--rosa);
+        width: 50%;
+        margin-left: -70px;
+        transition: all 0.5s;
+        display: none;
+        align-self: flex-end;
+        padding-top: 20px;
+    }
 
-}
-.nav-home{
-    align-self: flex-end;
-    border-bottom: solid 1px var(--celeste);
+    .nav-home-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-}
+    }
 
-.nav-home__link {
-color: white; 
+    .nav-home {
+        align-self: flex-end;
+        border-bottom: solid 1px var(--celeste);
 
-}
-.nav-home__link:hover{
-    background-color: var(--celeste);
-}
-#btn-menu-navbar:checked ~ .nav-home-contenedor{
-    margin-top: 130px;
+    }
 
-z-index: 5;
-    display: block;
-}
+    .nav-home__link {
+        color: white;
+
+    }
+
+    .nav-home__link:hover {
+        background-color: var(--celeste);
+    }
+
+    #btn-menu-navbar:checked~.nav-home-contenedor {
+        margin-top: 130px;
+
+        z-index: 5;
+        display: block;
+    }
 
 
 
     /*Página Galería*/
 
-/*Navegación secundaria*/
-.label-galeria {
-    display: block;
+    /*Navegación secundaria*/
+    .label-galeria {
+        display: block;
 
-}
+    }
 
-.nav-galeria {
+    .nav-galeria {
 
-    position: absolute;
-    z-index: 3;
-    background-color: var(--celeste);
-    width: 50%;
-    margin-left: -70px;
-    transition: all 1s;
-    display: none;
-    align-self: flex-start;
-    padding-left: 10px;
-    padding-top: 15px;
-
-
-
-}
-
-.menu-galeria__ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    
-
-}
-
-.menu-galeria__li {
-    border-bottom: solid 1px var(--rosa);
-    align-self: flex-start;
-    
-    
-}
-
-.menu-galeria__link {
-    color: white;
+        position: absolute;
+        z-index: 3;
+        background-color: var(--celeste);
+        width: 50%;
+        margin-left: -70px;
+        transition: all 1s;
+        display: none;
+        align-self: flex-start;
+        padding-left: 10px;
+        padding-top: 15px;
 
 
 
-}
+    }
 
-#btn-menu:checked~.nav-galeria {
-    margin: 0;
-    display: block;
+    .menu-galeria__ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
 
-}
+
+    }
+
+    .menu-galeria__li {
+        border-bottom: solid 1px var(--rosa);
+        align-self: flex-start;
+
+
+    }
+
+    .menu-galeria__link {
+        color: white;
+
+
+
+    }
+
+    #btn-menu:checked~.nav-galeria {
+        margin: 0;
+        display: block;
+
+    }
 
 
 
