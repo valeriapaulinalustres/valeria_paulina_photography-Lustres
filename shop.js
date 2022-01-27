@@ -54,10 +54,8 @@ if (codigoDescuento == codigo) {alert("El precio final es de: " + " " + "$" + pr
 
 
 
-
+*/
 //CLASE 5
-
-
 
 //creo clase (función constructora) con función que calcule precio*cantidad
 class Compra {
@@ -67,85 +65,71 @@ class Compra {
         this.precio = precio;
         this.cantidad = cantidad;
     }
-reserva(){
-    console.log("El cliente ha cargado en el carrito")
+    reserva() {
+        console.log("El cliente ha cargado en el carrito")
+    }
 }
-}
-
-
-let costo1 = 0;
-let nombre1 = "";
-let precio1 = 0;
-let cantidad = 0;
-let costoTotal1 = 0;
 
 
 
-//creo ciclo con while para que ingrese X número de compras:
-while (true) {
-    alert("Insertar una nueva compra en el carrito");
+let sesionIngresada = "";
+let precioIngresado = 0;
+let cantidadIngresada = 0;
+let seguirComprando = "";
 
-    //Declaro variables con ventana de ingreso y break con "cancelar" 
-    nombre1 = prompt("Ingrese el nombre del producto");
-    if (nombre1 == "cancelar") {
-        break
-    };
-    precio1 = parseFloat(prompt("Ingrese el precio del producto"));
-    if (precio1 == "cancelar") {
-        break
-    };
-    cantidad1 = parseFloat(prompt("Ingrese la cantidad deseada"));
-    if (cantidad1 == "cancelar") {
-        break
-    };
+alert("Bienvenido al carrito de compras")
 
-
-
+do {
+    
+    sesionIngresada = prompt("Ingrese el nombre del producto");
+    precioIngresado = parseFloat(prompt("Ingrese el precio del producto"));
+    cantidadIngresada = parseFloat(prompt("Ingrese la cantidad deseada"));
     //creo nuevo producto con los datos ingresados por el usuario
-    const compra1 = new Compra(nombre1, precio1, cantidad1)
+    const compraIngresada = new Compra(sesionIngresada, precioIngresado, cantidadIngresada)
 
-
+    seguirComprando = prompt("¿Desea seguir agregando productos en el carrito?")
 
     //declaro la variable resultado 
-    let resultado = "";
+    let respuestaCompra = "";
     //declaro el contenido de esa variable
-    resultado += "Usted comprará:" + " " + compra1.nombre + ", " + "precio:" + " " + compra1.precio + ", " + "cantidad:" + " " + compra1.cantidad + ". " + "\n"
+    respuestaCompra += "Usted comprará:" + " " + compraIngresada.nombre + ", " + "precio:" + " " + compraIngresada.precio + ", " + "cantidad:" + " " + compraIngresada.cantidad + ". " + "\n"
     //salida con todo lo ingresado por el usuario
-    alert(resultado)
+    alert(respuestaCompra)
 
     //calculo y alert de precio * cantidad
-    total(precio1, cantidad1);
-    costoTotal(costo1, costoTotal1);
-    
+    let subtotal =  precioPorUnidad(precioIngresado, cantidadIngresada);
+    let totalPagar = totalSuma(subtotal, precioIngresado);
 
-    alert("El costo es de $ " + costo1)
-    alert("El monto a pagar es de $ " + costoTotal1)
-    
+
+    alert("El subtotal es de $ " + subtotal)
+    alert("El monto total a pagar es de $ " + totalPagar)
+
 
 
 
     //visualizo en consola el objeto "Producto1" ingresado por el usuario,  precio * cantidad y precio total
-    console.log(compra1)
-    console.log("costo $" + costo1)
-    console.log("Monto a pagar $" + costoTotal1)
-    compra1.reserva()
+    console.log(compraIngresada)
+    console.log("subtotal $" + subtotal)
+    console.log("Monto total a pagar $" + totalPagar)
+    compraIngresada.reserva()
 
-
-}
-
+    
+} while (seguirComprando == "si");
 
 
 
 //funciones
-function total(precio, cantidad) {
-    costo1 = precio1 * cantidad1
+function precioPorUnidad(precio, cantidad) {
+    return (precio * cantidad)
 };
 
-function costoTotal(costo, costo2) {
-    costoTotal1 = costo1 + costoTotal1
+function totalSuma(costo, costo2) {
+    return (costo + costo2)
 };
 
-*/
+
+/*
+
 //CLASE 6
 
 //Clase
