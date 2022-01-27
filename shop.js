@@ -52,9 +52,9 @@ if (codigoDescuento == codigo) {alert("El precio final es de: " + " " + "$" + pr
 }
 
 
-
-
 */
+
+
 //CLASE 5
 
 //creo clase (función constructora) con función que calcule precio*cantidad
@@ -128,7 +128,7 @@ function totalSuma(costo, costo2) {
 };
 
 
-/*
+
 
 //CLASE 6
 
@@ -148,7 +148,6 @@ const sesionesRecienNacido = new Sesiones ("Recién Nacido", 5000, 3);
 const sesionesBebe = new Sesiones ("Bebés", 4000, 5);
 
 const sesionesNinos = new Sesiones ("Niños", 3000, 6);
-
 
 
 
