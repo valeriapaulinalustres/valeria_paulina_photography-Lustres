@@ -1,0 +1,291 @@
+
+/*Página Galería*/
+.galeria-contenedor {
+
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+
+/*Menú de navegación de "Galería"*/
+
+#btn-menu {
+    display: none;
+}
+
+.label-galeria {
+
+    display: none;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.label-galeria:hover {
+    cursor: pointer;
+
+
+}
+
+.menu-galeria__li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu-galeria__link {
+    display: block;
+    color: var(--rosa);
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.menu-galeria__ul {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+
+
+.nav-galeria {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 80px;
+    padding-right: 80px;
+
+
+}
+
+.carrousel-padre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: normal;
+}
+
+.misfavoritas {
+
+    text-align: center;
+}
+
+
+.dulceespera {
+
+    text-align: center;
+}
+
+
+.reciennacido {
+
+    text-align: center;
+}
+
+
+
+.bebes {
+
+    text-align: center;
+}
+
+
+
+.ninios {
+
+    text-align: center;
+}
+
+.ninios__img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.teens {
+
+    text-align: center;
+}
+
+
+.fineart {
+
+    text-align: center;
+}
+
+
+.eventossociales {
+
+    text-align: center;
+}
+
+
+.primeracomunion {
+
+    text-align: center;
+}
+
+
+
+/*volver de Galería*/
+
+.volver {
+    color: var(--rosa);
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.volver:hover {
+    background-color: var(--rosa);
+    color: var(--amarillo-claro);
+    padding: 3px 6px;
+    border-radius: 15px;
+
+}
+
+.menu-galeria__link:hover {
+    background-color: var(--rosa);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 15px;
+
+}
+
+
+//Responsive celular
+
+@media only screen and (max-width:480px) {
+    /*Página Galería*/
+
+
+    /*Navegación secundaria*/
+    .label-galeria {
+        display: block;
+
+    }
+
+    .nav-galeria {
+
+        position: absolute;
+        z-index: 3;
+        background-color: var(--celeste);
+        width: 83%;
+        margin-left: -70px;
+        transition: all 1s;
+        display: none;
+        align-self: flex-start;
+        padding-left: 10px;
+        padding-top: 15px;
+
+
+
+    }
+
+    .menu-galeria__ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+
+
+    }
+
+    .menu-galeria__li {
+        border-bottom: solid 1px var(--rosa);
+        align-self: flex-start;
+
+
+    }
+
+    .menu-galeria__link {
+        color: white;
+
+
+
+    }
+
+    #btn-menu:checked~.nav-galeria {
+        margin: 0;
+        display: block;
+
+    }
+
+
+}
+
+//Responsive Tablet
+@media only screen and (min-width: 481px) and (max-width:968px) {
+
+
+
+    /*Página Galería*/
+
+    /*Navegación secundaria*/
+    .label-galeria {
+        display: block;
+
+    }
+
+    .nav-galeria {
+
+        position: absolute;
+        z-index: 3;
+        background-color: var(--celeste);
+        width: 50%;
+        margin-left: -70px;
+        transition: all 1s;
+        display: none;
+        align-self: flex-start;
+        padding-left: 10px;
+        padding-top: 15px;
+
+
+
+    }
+
+    .menu-galeria__ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+
+
+    }
+
+    .menu-galeria__li {
+        border-bottom: solid 1px var(--rosa);
+        align-self: flex-start;
+
+
+    }
+
+    .menu-galeria__link {
+        color: white;
+
+
+
+    }
+
+    #btn-menu:checked~.nav-galeria {
+        margin: 0;
+        display: block;
+
+    }
+
+
+
+
+
+}

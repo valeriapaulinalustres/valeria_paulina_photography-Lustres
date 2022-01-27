@@ -1,0 +1,44 @@
+
+/*Página Acerca de*/
+.acercade-contenedor__img {
+    border-radius: 50%;
+    margin: 3rem;
+
+}
+
+.acercade-contenedor__texto {
+    text-align: justify;
+    padding: 3rem;
+}
+
+.acercade-contenedor {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+//Mobile celular
+@media only screen and (max-width:480px) {
+    .acercade-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+//Mobile Tablet
+@media only screen and (min-width: 481px) and (max-width:968px) {
+    
+    .acercade-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}

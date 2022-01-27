@@ -1,0 +1,19 @@
+{
+  "name": "valeria_paulina_photography-lustres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeriapaulinalustres/valeria_paulina_photography-Lustres.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeriapaulinalustres/valeria_paulina_photography-Lustres/issues"
+  },
+  "homepage": "https://github.com/valeriapaulinalustres/valeria_paulina_photography-Lustres#readme"
+}

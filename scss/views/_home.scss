@@ -1,0 +1,73 @@
+/*Inicio Body*/
+
+.body {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template: 147px 1fr 60px/1fr;
+
+}
+
+.body-home {
+    display: grid;
+    grid-template: 147px 1fr 60px/1fr;
+
+    position: relative;
+}
+
+/*Página Home*/
+
+.carrousel__inicio {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    z-index: -1;
+
+}
+
+.contenedor-celular {
+    display: none;
+}
+
+.texto-home-celular {
+    display: none;
+}
+
+//Responsive celular
+@media only screen and (max-width:480px) {
+
+    .carrousel__inicio {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        z-index: 0;
+
+    }
+
+    .contenedor-celular {
+        display: block;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url("../valeria_paulina_photography-Lustres/src/assets/image/favorita-nena-atardecer.jpg");
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position-x: -900px;
+        background-attachment: fixed;
+        margin-top: 10px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .texto-background-img {
+        margin: 10%;
+        font-size: x-large;
+
+
+    }
+
+    .texto-home-celular {
+        margin: 3%;
+        display: block;
+    }
+
+
+}
