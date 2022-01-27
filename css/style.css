@@ -1,8 +1,7 @@
 @charset "UTF-8";
-
+/*Página Acerca de*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Raleway:ital,wght@0,300;1,300&family=Satisfy&display=swap");
-
 .acercade-contenedor__img {
   border-radius: 50%;
   margin: 3rem;
