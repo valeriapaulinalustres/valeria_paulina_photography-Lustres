@@ -52,7 +52,6 @@ if (codigoDescuento == codigo) {alert("El precio final es de: " + " " + "$" + pr
 }
 
 
-*/
 
 
 //CLASE 5
@@ -141,6 +140,8 @@ class Sesiones {
     }
     }
 
+
+
 //Declaro objetos a la venta
 
 const sesionesRecienNacido = new Sesiones ("Recién Nacido", 5000, 3);
@@ -148,6 +149,8 @@ const sesionesRecienNacido = new Sesiones ("Recién Nacido", 5000, 3);
 const sesionesBebe = new Sesiones ("Bebés", 4000, 5);
 
 const sesionesNinos = new Sesiones ("Niños", 3000, 6);
+
+
 
 
 
@@ -183,5 +186,119 @@ alert("Usted tiene en su carrito las siguientes sesiones:" + "\n" + carrito)
 console.log ("Cantidad de distintos tipos de sesiones fotográficas ofrecidas:" + " " + sesionesFotograficas.length)
 //listado de sesiones ofrecidas, con precio:
 
+*/
 
+
+
+//clase 7
+
+class Sesiones {
+    constructor(nombre, precio, cantidad) {
+        this.nombre = nombre;
+        this.precio = parseFloat(precio);
+        this.cantidad = cantidad;
+    }
+}
+
+
+
+const sesionesDulceEspera = {
+    nombre: "dulce espera",
+    precio: 5000,
+    cantidad: 5,
+};
+
+
+const sesionesRecienNacido = {
+    nombre: "recien nacido",
+    precio: 5000,
+    cantidad: 5,
+};
+
+
+const sesionesNinos = {
+    nombre: "ninos",
+    precio: 4000,
+    cantidad: 5,
+};
+
+const sesionesTeens = {
+    nombre: "teens",
+    precio: 4000,
+    cantidad: 5,
+};
+
+const sesionesFineart = {
+    nombre: "fine art",
+    precio: 4000,
+    cantidad: 5,
+};
+
+
+const sesionesEventosSociales = {
+    nombre: "eventos sociales",
+    precio: 2000,
+    cantidad: 5,
+};
+
+
+const sesionesComunion = {
+    nombre: "comunion",
+    precio: 3000,
+    cantidad: 5,
+};
+
+//Declaro array de objetos a la venta
+const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacido, sesionesTeens, sesionesFineart, sesionesEventosSociales, sesionesComunion, ];
+
+
+
+//Pregntar precio ingresando nombre de sesión
+
+function consultarPrecioSesion(sesionesFotograficas, nombreSesion) {
+    return sesionesFotograficas.find(objeto => objeto.nombre === nombreSesion.toLowerCase());
+}
+
+let sesionInput ="";
+sesionInput = prompt("Ingrese el nombre de la sesión fotográfica que desea consultar el precio");
+
+while (sesionInput != "ESC") {
+    let busquedaSesion = consultarPrecioSesion(sesionesFotograficas, sesionInput);
+    if (busquedaSesion != undefined) {
+        alert("Usted seleccionó: " + busquedaSesion.nombre + "\n" + " El costo es de $ " + busquedaSesion.precio);
+        
+    } else {
+        alert("No existe una sesión fotográfica con ese nombre. Inténtelo nuevamente por favor.");
+    };
+    sesionInput = prompt("Ingrese el nombre de la sesión fotográfica que desea consultar el precio");
+    
+};
+
+//Filtrar por precio ingresando un valor máximo
+
+function filtroPrecios(sesionesFotograficas, precio) {
+    return sesionesFotograficas.filter(objeto => objeto.precio < parseFloat(precio));
+}
+function listarPreciosBajos(preciosBajos) {
+    let listaPreciosBajos = "";
+    for (const sesiones of preciosBajos) {
+        listaPreciosBajos += "Sesión Fotográfica: " + sesiones.nombre + "," + "precio: $" + sesiones.precio + "\n"
+    }
+    return listaPreciosBajos;
+}
+
+let precioInput ="";
+precioInput = prompt("Ingrese precio máximo");
+
+
+while (precioInput != "ESC") {
+    let filtroIngresado = filtroPrecios(sesionesFotograficas,precioInput );
+    if (filtroIngresado.length > 0) {
+        alert(listarPreciosBajos(filtroIngresado));
+    } else {
+        alert("No existen sesiones con el precio menor al ingresado");
+    }
+    precioInput = prompt("Ingrese precio máximo");
+    
+}
 
