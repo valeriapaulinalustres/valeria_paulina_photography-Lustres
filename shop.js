@@ -1,5 +1,3 @@
-
-
 //El usuario selecciona todos las sesiones fotográficas que quiere y le devuelve alert con listado de las mismas
 
 
@@ -13,7 +11,7 @@ if (isNaN(numeroSesionesReserva)) {
 } else {
     let sesiones = '';
     for (let index = 0; index < numeroSesionesReserva; index++) {
-        sesiones += prompt("Ingrese el nombre de las sesiones fotográficas")+"\n";
+        sesiones += prompt("Ingrese el nombre de las sesiones fotográficas") + "\n";
     }
     alert("Usted reservará las siguientes sesiones fotográficas:" + "\n" + sesiones);
 }
@@ -37,16 +35,19 @@ alert("El costo total de las sesiones fotográficas es de: " + parseFloat(totalS
 
 const descuento = 20;
 
-function precioConDescuento(precio,porcentaje) {return (precio - (precio*porcentaje/100));
-    
+function precioConDescuento(precio, porcentaje) {
+    return (precio - (precio * porcentaje / 100));
+
 };
 let codigo = "1234"
 let codigoDescuento = parseInt(prompt("Ingrese si tiene, el código de descuento"));
 
-if (codigoDescuento == codigo) {alert("El precio final es de: " + " " + "$" + precioConDescuento(totalSesiones,descuento));
-    
-} else {alert("Como usted no tiene el código de descuento, el precio final es de:" + " " + "$" + totalSesiones)
-    
+if (codigoDescuento == codigo) {
+    alert("El precio final es de: " + " " + "$" + precioConDescuento(totalSesiones, descuento));
+
+} else {
+    alert("Como usted no tiene el código de descuento, el precio final es de:" + " " + "$" + totalSesiones)
+
 }
 
 
@@ -77,7 +78,7 @@ let seguirComprando = "";
 alert("Bienvenido al carrito de compras")
 
 do {
-    
+
     sesionIngresada = prompt("Ingrese el nombre del producto");
     precioIngresado = parseFloat(prompt("Ingrese el precio del producto"));
     cantidadIngresada = parseFloat(prompt("Ingrese la cantidad deseada"));
@@ -94,8 +95,8 @@ do {
     alert(respuestaCompra)
 
     //calculo y alert de precio * cantidad
-    let subtotal =  precioPorUnidad(precioIngresado, cantidadIngresada);
-   
+    let subtotal = precioPorUnidad(precioIngresado, cantidadIngresada);
+
 
 
     alert("El subtotal es de $ " + subtotal)
@@ -109,7 +110,7 @@ do {
     console.log("subtotal $" + subtotal)
     compraIngresada.reserva()
 
-    
+
 } while (seguirComprando == "si");
 
 
@@ -125,12 +126,12 @@ function precioPorUnidad(precio, cantidad) {
 
 //Declaro clase Sesiones
 class Sesiones {
-    constructor (nombre, precio, cantidad){
+    constructor(nombre, precio, cantidad) {
         this.nombre = nombre;
         this.precio = parseFloat(precio);
         this.cantidad = cantidad;
     }
-    }
+}
 
 
 //declaro array de carrito
@@ -219,19 +220,19 @@ function consultarPrecioSesion(sesionesFotograficas, nombreSesion) {
     return sesionesFotograficas.find(objeto => objeto.nombre === nombreSesion.toLowerCase());
 }
 
-let sesionInput ="";
+let sesionInput = "";
 sesionInput = prompt("Ingrese el nombre de la sesión fotográfica que desea consultar el precio");
 
 while (sesionInput != "ESC") {
     let busquedaSesion = consultarPrecioSesion(sesionesFotograficas, sesionInput);
     if (busquedaSesion != undefined) {
         alert("Usted seleccionó: " + busquedaSesion.nombre + "\n" + " El costo es de $ " + busquedaSesion.precio);
-        
+
     } else {
         alert("No existe una sesión fotográfica con ese nombre. Inténtelo nuevamente por favor.");
     };
     sesionInput = prompt("Ingrese el nombre de la sesión fotográfica que desea consultar el precio");
-    
+
 };
 
 //Filtrar por precio ingresando un valor máximo
@@ -239,6 +240,7 @@ while (sesionInput != "ESC") {
 function filtroPrecios(sesionesFotograficas, precio) {
     return sesionesFotograficas.filter(objeto => objeto.precio < parseFloat(precio));
 }
+
 function listarPreciosBajos(preciosBajos) {
     let listaPreciosBajos = "";
     for (const sesiones of preciosBajos) {
@@ -247,19 +249,19 @@ function listarPreciosBajos(preciosBajos) {
     return listaPreciosBajos;
 }
 
-let precioInput ="";
+let precioInput = "";
 precioInput = prompt("Filtro de precios. Ingrese precio máximo");
 
 
 while (precioInput != "ESC") {
-    let filtroIngresado = filtroPrecios(sesionesFotograficas,precioInput );
+    let filtroIngresado = filtroPrecios(sesionesFotograficas, precioInput);
     if (filtroIngresado.length > 0) {
         alert(listarPreciosBajos(filtroIngresado));
     } else {
         alert("No existen sesiones con el precio menor al ingresado");
     }
     precioInput = prompt("Ingrese precio máximo");
-    
+
 }
 
 // Alert con listado de nombres y precios de sesiones fotográficas ofrecidas:
@@ -269,15 +271,16 @@ let listaUnitaria = "";
 let listaCompleta = "";
 
 if (conocerListado === "si") {
-    for (const lista of sesionesFotograficas) {listaUnitaria = (lista.nombre +": " +"$"+ lista.precio)
-    listaCompleta += listaUnitaria + "\n";
+    for (const lista of sesionesFotograficas) {
+        listaUnitaria = (lista.nombre + ": " + "$" + lista.precio)
+        listaCompleta += listaUnitaria + "\n";
     }
-alert(listaCompleta)
-    
-} else {alert("Gracias")
-    
+    alert(listaCompleta)
+
+} else {
+    alert("Gracias")
+
 }
 
 //alert con total de sesiones ofrecidas
 alert("Total de opciones:" + sesionesFotograficas.length)
-
