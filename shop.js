@@ -157,6 +157,7 @@ const sesionesNinos = new Sesiones ("Niños", 3000, 6);
 //Declaro array de objetos a la venta
 const sesionesFotograficas = [sesionesRecienNacido, sesionesBebe, sesionesNinos];
 
+
 //declaro array de carrito
 const carrito = [];
 
@@ -186,8 +187,8 @@ alert("Usted tiene en su carrito las siguientes sesiones:" + "\n" + carrito)
 console.log ("Cantidad de distintos tipos de sesiones fotográficas ofrecidas:" + " " + sesionesFotograficas.length)
 //listado de sesiones ofrecidas, con precio:
 
-*/
 
+*/
 
 
 //clase 7
@@ -200,7 +201,7 @@ class Sesiones {
     }
 }
 
-
+//Listado de objetos (sesiones)
 
 const sesionesDulceEspera = {
     nombre: "dulce espera",
@@ -302,3 +303,21 @@ while (precioInput != "ESC") {
     
 }
 
+// Alert con listado de nombres y precios de sesiones fotográficas ofrecidas:
+
+let conocerListado = prompt("¿Desea conocer el listado de sesiones fotográficas ofrecido?");
+let listaUnitaria = "";
+let pitufo = "";
+
+if (conocerListado === "si") {
+    for (const lista of sesionesFotograficas) {listaUnitaria = (lista.nombre +": " +"$"+ lista.precio)
+    pitufo += listaUnitaria + "\n";
+    }
+alert(pitufo)
+    
+} else {alert("Gracias")
+    
+}
+
+//alert con total de sesiones ofrecidas
+alert("Total de opciones:" + sesionesFotograficas.length)
