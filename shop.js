@@ -1,18 +1,18 @@
-/*
+
 
 //El usuario selecciona todos las sesiones fotográficas que quiere y le devuelve alert con listado de las mismas
 
 
-let num1 = parseFloat(prompt("Inserte el número total de sesiones que reservará"))
+let numeroSesionesReserva = parseFloat(prompt("Inserte el número total de sesiones que reservará"))
 
-console.log("Total de sesiones reservadas:" + " " + num1)
+console.log("Total de sesiones reservadas:" + " " + numeroSesionesReserva)
 
-if (isNaN(num1)) {
+if (isNaN(numeroSesionesReserva)) {
     alert("no ingrese el número en letras, por favor")
 
 } else {
     let sesiones = '';
-    for (let index = 0; index < num1; index++) {
+    for (let index = 0; index < numeroSesionesReserva; index++) {
         sesiones += prompt("Ingrese el nombre de las sesiones fotográficas")+"\n";
     }
     alert("Usted reservará las siguientes sesiones fotográficas:" + "\n" + sesiones);
@@ -23,12 +23,10 @@ if (isNaN(num1)) {
 //suma de precios de todos los ítems seleccionados
 
 
-
-let num = prompt("Inserte el número total de sesiones que reservará");
 let valorSesion;
 let totalSesiones = 0;
-for (let i = 0; i < num; i++) {
-    valorSesion = prompt("Ingrese el valor de la sesión fotográfica: ");
+for (let i = 0; i < numeroSesionesReserva; i++) {
+    valorSesion = prompt("Ingrese el valor de una de las sesiones fotográficas: ");
     totalSesiones = parseFloat(totalSesiones) + parseFloat(valorSesion)
 }
 
@@ -97,11 +95,11 @@ do {
 
     //calculo y alert de precio * cantidad
     let subtotal =  precioPorUnidad(precioIngresado, cantidadIngresada);
-    let totalPagar = totalSuma(subtotal, precioIngresado);
+   
 
 
     alert("El subtotal es de $ " + subtotal)
-    alert("El monto total a pagar es de $ " + totalPagar)
+    //alert("El monto total a pagar es de $ " + totalPagar)
 
 
 
@@ -109,7 +107,6 @@ do {
     //visualizo en consola el objeto "Producto1" ingresado por el usuario,  precio * cantidad y precio total
     console.log(compraIngresada)
     console.log("subtotal $" + subtotal)
-    console.log("Monto total a pagar $" + totalPagar)
     compraIngresada.reserva()
 
     
@@ -122,16 +119,11 @@ function precioPorUnidad(precio, cantidad) {
     return (precio * cantidad)
 };
 
-function totalSuma(costo, costo2) {
-    return (costo + costo2)
-};
-
-
 
 
 //CLASE 6
 
-//Clase
+//Declaro clase Sesiones
 class Sesiones {
     constructor (nombre, precio, cantidad){
         this.nombre = nombre;
@@ -139,23 +131,6 @@ class Sesiones {
         this.cantidad = cantidad;
     }
     }
-
-
-
-//Declaro objetos a la venta
-
-const sesionesRecienNacido = new Sesiones ("Recién Nacido", 5000, 3);
-
-const sesionesBebe = new Sesiones ("Bebés", 4000, 5);
-
-const sesionesNinos = new Sesiones ("Niños", 3000, 6);
-
-
-
-
-
-//Declaro array de objetos a la venta
-const sesionesFotograficas = [sesionesRecienNacido, sesionesBebe, sesionesNinos];
 
 
 //declaro array de carrito
@@ -180,26 +155,10 @@ while (sesionSolicitada != 'ESC') {
 alert("Usted tiene en su carrito las siguientes sesiones:" + "\n" + carrito)
 
 
-//Para ser usado por el vendedor (fotógrafa)
 
-//para ver cantidad de distintas sesiones ofrecidas:
-
-console.log ("Cantidad de distintos tipos de sesiones fotográficas ofrecidas:" + " " + sesionesFotograficas.length)
-//listado de sesiones ofrecidas, con precio:
-
-
-*/
 
 
 //clase 7
-
-class Sesiones {
-    constructor(nombre, precio, cantidad) {
-        this.nombre = nombre;
-        this.precio = parseFloat(precio);
-        this.cantidad = cantidad;
-    }
-}
 
 //Listado de objetos (sesiones)
 
@@ -289,7 +248,7 @@ function listarPreciosBajos(preciosBajos) {
 }
 
 let precioInput ="";
-precioInput = prompt("Ingrese precio máximo");
+precioInput = prompt("Filtro de precios. Ingrese precio máximo");
 
 
 while (precioInput != "ESC") {
@@ -307,13 +266,13 @@ while (precioInput != "ESC") {
 
 let conocerListado = prompt("¿Desea conocer el listado de sesiones fotográficas ofrecido?");
 let listaUnitaria = "";
-let pitufo = "";
+let listaCompleta = "";
 
 if (conocerListado === "si") {
     for (const lista of sesionesFotograficas) {listaUnitaria = (lista.nombre +": " +"$"+ lista.precio)
-    pitufo += listaUnitaria + "\n";
+    listaCompleta += listaUnitaria + "\n";
     }
-alert(pitufo)
+alert(listaCompleta)
     
 } else {alert("Gracias")
     
@@ -321,3 +280,4 @@ alert(pitufo)
 
 //alert con total de sesiones ofrecidas
 alert("Total de opciones:" + sesionesFotograficas.length)
+
