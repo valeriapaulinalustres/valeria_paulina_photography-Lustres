@@ -1,4 +1,4 @@
-
+@import "../../scss/base/mixins";
 
 /*Página Contacto*/
 
@@ -176,10 +176,8 @@
     }
 
     .contacto-contenedor {
-        display: flex;
-        flex-direction: column;
+        @include flex-column-align-center;
         justify-content: space-around;
-        align-items: center;
         align-content: center;
 
     }
@@ -191,26 +189,17 @@
 
     .contacto-contenedor-mapa {
         align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-align-center;
         text-align: center;
     }
 
     .contacto-formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-align-center;
     }
 
     .contacto-wa-mail {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-align-center;
     }
 
 
 }
-
-
-
