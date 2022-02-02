@@ -125,7 +125,7 @@ function precioPorUnidad(precio, cantidad) {
 };
 
 
-
+*/
 //CLASE 6
 
 //Declaro clase Sesiones
@@ -137,7 +137,7 @@ class Sesiones {
     }
 }
 
-*/
+
 //declaro array de carrito
 const carrito = [];
 
@@ -161,7 +161,6 @@ alert("Usted tiene en su carrito las siguientes sesiones:" + "\n" + carrito)
 
 
 
-/*
 
 //clase 7
 
@@ -216,7 +215,7 @@ const sesionesComunion = {
 //Declaro array de objetos a la venta
 const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacido, sesionesTeens, sesionesFineart, sesionesEventosSociales, sesionesComunion, ];
 
-
+/*
 
 //Pregntar precio ingresando nombre de sesión
 
@@ -291,38 +290,26 @@ alert("Total de opciones:" + sesionesFotograficas.length)
 
 */
 
-/*
 
-//declaro array de carrito
-const carrito = [];
-
-//ingreso de sesiones solicitadas por usuario y salida por alert
-
-alert("Bienvenido al carrito de compras")
-
-let sesionSolicitada = prompt("Ingrese el nombre de la sesión fotográfica deseada");
-
-while (sesionSolicitada != 'ESC') {
-    carrito.push(sesionSolicitada);
-    sesionSolicitada = prompt("Ingrese el nombre de la sesión fotográfica deseada");
-}
-
-alert("Usted tiene en su carrito las siguientes sesiones:" + "\n" + carrito)
-
-*/
 
 //clase 8 DOM
+//creo lista a partir de entradas del usuario al carrito
 
 let padre = document.getElementById("carritoDOM");
-
-
 
 for (const sesion of carrito) {
     let li = document.createElement('li');
     li.innerHTML = sesion;
     padre.appendChild(li);
 }
+//creo nodos a partir de mis objetos (sesiones)
+let resume = document.getElementById("resumen");
 
 
+for (const objeto of sesionesFotograficas) {
+    let infoSesiones = document.createElement("p");
+    infoSesiones.innerHTML = objeto["nombre"];
+resume.append(infoSesiones);
+}
 
 
