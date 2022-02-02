@@ -1,3 +1,5 @@
+/*
+
 //El usuario selecciona todos las sesiones fotográficas que quiere y le devuelve alert con listado de las mismas
 
 
@@ -15,6 +17,8 @@ if (isNaN(numeroSesionesReserva)) {
     }
     alert("Usted reservará las siguientes sesiones fotográficas:" + "\n" + sesiones);
 }
+
+
 
 
 
@@ -133,7 +137,7 @@ class Sesiones {
     }
 }
 
-
+*/
 //declaro array de carrito
 const carrito = [];
 
@@ -157,7 +161,7 @@ alert("Usted tiene en su carrito las siguientes sesiones:" + "\n" + carrito)
 
 
 
-
+/*
 
 //clase 7
 
@@ -284,3 +288,41 @@ if (conocerListado === "si") {
 
 //alert con total de sesiones ofrecidas
 alert("Total de opciones:" + sesionesFotograficas.length)
+
+*/
+
+/*
+
+//declaro array de carrito
+const carrito = [];
+
+//ingreso de sesiones solicitadas por usuario y salida por alert
+
+alert("Bienvenido al carrito de compras")
+
+let sesionSolicitada = prompt("Ingrese el nombre de la sesión fotográfica deseada");
+
+while (sesionSolicitada != 'ESC') {
+    carrito.push(sesionSolicitada);
+    sesionSolicitada = prompt("Ingrese el nombre de la sesión fotográfica deseada");
+}
+
+alert("Usted tiene en su carrito las siguientes sesiones:" + "\n" + carrito)
+
+*/
+
+//clase 8 DOM
+
+let padre = document.getElementById("carritoDOM");
+
+
+
+for (const sesion of carrito) {
+    let li = document.createElement('li');
+    li.innerHTML = sesion;
+    padre.appendChild(li);
+}
+
+
+
+
