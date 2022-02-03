@@ -29,6 +29,10 @@
   color: white;
 }
 
+.copyright--colorBlanco {
+  color: white;
+}
+
 @media only screen and (max-width: 480px) {
   .acercade-contenedor {
     display: flex;
@@ -265,6 +269,10 @@
 }
 
 .copyright--no-home {
+  color: white;
+}
+
+.copyright--colorBlanco {
   color: white;
 }
 
@@ -676,7 +684,7 @@
 .copyright-home {
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
-  color: white;
+  color: #ffffb5;
   background-color: transparent;
   grid-column: 2/3;
   grid-row: 1/2;
