@@ -1,4 +1,6 @@
 
+@import "../../scss/base/mapas";
+
 /*Página Acerca de*/
 .acercade-contenedor__img {
     border-radius: 50%;
@@ -20,6 +22,12 @@
     align-items: center;
 
 }
+
+@each $key, $value in $color-letra {
+    .copyright--#{$key}{color:$value;}
+    
+};
+
 
 //Mobile celular
 @media only screen and (max-width:480px) {

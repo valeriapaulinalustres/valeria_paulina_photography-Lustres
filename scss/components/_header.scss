@@ -14,12 +14,10 @@ a{
 }
 
 .header-home {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: column;
+    @extend.header;
     justify-content: flex-start;
     align-items: center;
+    background-color: transparent;
 }
 
 .nav {

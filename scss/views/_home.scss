@@ -1,4 +1,7 @@
 /*Inicio Body*/
+@import "../../scss/base/mapas";
+
+
 
 .body {
     background-color: #FFFFFF;
@@ -29,6 +32,14 @@
 
 .texto-home-celular {
     display: none;
+};
+
+@each $key, $value in $color-letra {
+    .copyright--#{$key}{color:$value;}
+    
+};
+.copyright--home {
+    color: map-get($color-letra, color);
 }
 
 //Responsive celular
