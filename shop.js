@@ -186,21 +186,8 @@ const sesionesNinos = {
     cantidad: 5,
 };
 
-const sesionesTeens = {
-    nombre: "teens",
-    precio: 4000,
-    cantidad: 5,
-};
-
-const sesionesFineart = {
-    nombre: "fine art",
-    precio: 4000,
-    cantidad: 5,
-};
-
-
-const sesionesEventosSociales = {
-    nombre: "eventos sociales",
+const sesionesSociales = {
+    nombre: "sociales",
     precio: 2000,
     cantidad: 5,
 };
@@ -213,7 +200,7 @@ const sesionesComunion = {
 };
 
 //Declaro array de objetos a la venta
-const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacido, sesionesTeens, sesionesFineart, sesionesEventosSociales, sesionesComunion, ];
+const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacido, sesionesNinos, sesionesSociales, sesionesComunion, ];
 
 /*
 
@@ -311,5 +298,29 @@ for (const objeto of sesionesFotograficas) {
     infoSesiones.innerHTML = objeto["nombre"];
 resume.append(infoSesiones);
 }
+
+
+//clase 9 Eventos
+
+const botonComprarDulceEspera = document.getElementById("botonComprarDulceEspera");
+const botonComprarRecienNacido = document.getElementById("botonComprarRecienNacido");
+const botonComprarNinos = document.getElementById("botonComprarNinos");
+const botonComprarSociales = document.getElementById("botonComprarSociales");
+const botonComprarComunion = document.getElementById("botonComprarComunion");
+
+function agregarAlCarrito(name) {
+    const sesionAgregada = sesionesFotograficas.find(p => p.nombre == name);
+    console.log ("Sesión agregada al carrito: "+ sesionAgregada.nombre);
+    carrito.push(sesionAgregada);
+    
+};
+
+botonComprarDulceEspera.onclick = () => agregarAlCarrito ("dulce espera");
+botonComprarRecienNacido.onclick = () => agregarAlCarrito ("recien nacido");
+botonComprarNinos.onclick = () => agregarAlCarrito ("ninos");
+botonComprarSociales.onclick = () => agregarAlCarrito ("sociales");
+botonComprarComunion.onclick = () => agregarAlCarrito ("comunion");
+
+
 
 
