@@ -1,4 +1,5 @@
 @import "../../scss/base/mixins";
+@import "../base/colores";
 
 /*Página Contacto*/
 
@@ -21,11 +22,11 @@
 
 /*Botones de mail y whatsapp de "Contactos"*/
 .contactos {
-    background-color: #E0A098;
-    border-top-color: #ffdeda;
-    border-left-color: #ffdeda;
-    border-bottom-color: #e49a91;
-    border-right-color: #e49a91;
+    background-color: $rosa;
+    border-top-color: $rosa-claro;
+    border-left-color: $rosa-claro;
+    border-bottom-color: $rosa-oscuro;
+    border-right-color: $rosa-oscuro;
     border-radius: 15px;
     color: white;
     margin: 5px;
@@ -35,18 +36,18 @@
 }
 
 .contactos:hover {
-    background-color: #98CBCB;
-    border-top-color: #c1f0f0;
-    border-left-color: #c1f0f0;
-    border-bottom-color: #6bc0c0;
-    border-right-color: #6bc0c0;
+    background-color: $celeste;
+    border-top-color: $celeste-claro;
+    border-left-color: $celeste-claro;
+    border-bottom-color: $celeste-oscuro;
+    border-right-color: $celeste-oscuro;
     text-transform: uppercase;
 
 }
 
 /*Formulario de "Contacto"*/
 .formulario {
-    background-color: #E0A098;
+    background-color: $rosa;
     border: #ffffff;
     color: #ffffff;
     margin: 5px;
@@ -68,7 +69,7 @@
 }
 
 .formulario-input {
-    background-color: #E0A098;
+    background-color: $rosa;
     border: #ffffff;
     color: #ffffff;
     margin: 5px;

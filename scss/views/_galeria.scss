@@ -36,7 +36,7 @@
 
 .menu-galeria__link {
     display: block;
-    color: var(--rosa);
+    color: $rosa;
     list-style-type: none;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -134,7 +134,7 @@
 /*volver de Galería*/
 
 .volver {
-    color: var(--rosa);
+    color: $rosa;
     background-color: transparent;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -144,15 +144,15 @@
 }
 
 .volver:hover {
-    background-color: var(--rosa);
-    color: var(--amarillo-claro);
+    background-color: $rosa;
+    color: $amarillo-claro;
     padding: 3px 6px;
     border-radius: 15px;
 
 }
 
 .menu-galeria__link:hover {
-    background-color: var(--rosa);
+    background-color: $rosa;
     color: white;
     padding: 3px 6px;
     border-radius: 15px;
@@ -176,7 +176,7 @@
 
         position: absolute;
         z-index: 3;
-        background-color: var(--celeste);
+        background-color: $celeste;
         width: 83%;
         margin-left: -70px;
         transition: all 1s;
@@ -197,7 +197,7 @@
     }
 
     .menu-galeria__li {
-        border-bottom: solid 1px var(--rosa);
+        border-bottom: solid 1px $rosa;
         align-self: flex-start;
 
 
@@ -236,7 +236,7 @@
 
         position: absolute;
         z-index: 3;
-        background-color: var(--celeste);
+        background-color: $celeste;
         width: 50%;
         margin-left: -70px;
         transition: all 1s;
@@ -257,7 +257,7 @@
     }
 
     .menu-galeria__li {
-        border-bottom: solid 1px var(--rosa);
+        border-bottom: solid 1px $rosa;
         align-self: flex-start;
 
 

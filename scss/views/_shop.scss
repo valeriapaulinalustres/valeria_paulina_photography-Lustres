@@ -53,7 +53,7 @@
 
 /*Título de "Shop"*/
 .sesiones-titulo {
-    color: var(--rosa);
+    color: $rosa;
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
@@ -61,23 +61,23 @@
 
 /*Botones de "Shop"*/
 .boton {
-    background-color: #E0A098;
-    border-top-color: #ffdeda;
-    border-left-color: #ffdeda;
-    border-bottom-color: #e49a91;
-    border-right-color: #e49a91;
+    background-color: $rosa;
+    border-top-color: $rosa-claro;
+    border-left-color: $rosa-claro;
+    border-bottom-color: $rosa-oscuro;
+    border-right-color: $rosa-oscuro;
     border-radius: 15px;
 
 
 }
 
 .boton:hover {
-    background-color: #98CBCB;
-    border-top-color: #c1f0f0;
-    border-left-color: #c1f0f0;
-    border-bottom-color: #6bc0c0;
-    border-right-color: #6bc0c0;
-    text-transform: uppercase;
+    background-color: $celeste;
+    border-top-color: $celeste-claro;
+    border-left-color: $celeste-claro;
+    border-bottom-color: $celeste-oscuro;
+    border-right-color: $celeste-oscuro;
+
 
 
 }
@@ -93,12 +93,13 @@
 
 //Responsive celular
 @media only screen and (max-width:480px) {
+
     /*Página Shop*/
     .contenedor-shop {
         display: grid;
         grid-template: 1fr 4fr 4fr 1fr 2fr/1fr;
         margin: 1rem;
-       @include flex-column-align-center;
+        @include flex-column-align-center;
         justify-items: center;
 
     }
@@ -122,6 +123,7 @@
         grid-row: 3/4;
         margin-left: 1rem;
         margin-right: 1rem;
+        text-align: center;
 
 
     }
@@ -134,12 +136,12 @@
     .contenedor-shop button {
         grid-column: 1/2;
         grid-row: 5/6;
-        width: 4rem;
+        width: 8rem;
         height: 2rem;
     }
 
     .boton__letra {
-        font-size: x-small;
+        font-size: 12px;
     }
 
 }

@@ -1,7 +1,7 @@
 {
   "name": "valeria_paulina_photography-lustres",
   "version": "1.0.0",
-  "description": "",
+  "description": "Valeria Paulina Photography es un emprendimiento cuyo objetivo es capturar momentos familiares inolvidables, mediante fotografías basadas en retratos artísticos que juegan con la luz y mucho color. Localizado en Buenos Aires, Argentina.",
   "main": "shop.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/valeriapaulinalustres/valeria_paulina_photography-Lustres.git"
   },
-  "author": "",
+  "author": "Valeria Paulina Lustres",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/valeriapaulinalustres/valeria_paulina_photography-Lustres/issues"
