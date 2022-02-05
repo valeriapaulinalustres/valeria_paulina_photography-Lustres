@@ -172,13 +172,17 @@ const sesionesDulceEspera = {
     cantidad: 5,
 };
 
-
-const sesionesRecienNacido = {
-    nombre: "recien nacido",
+const sesionesRecienNacidos = {
+    nombre: "recien nacidos",
     precio: 5000,
     cantidad: 5,
 };
 
+const sesionesBebes = {
+    nombre: "bebes",
+    precio: 5000,
+    cantidad: 5,
+};
 
 const sesionesNinos = {
     nombre: "ninos",
@@ -186,12 +190,23 @@ const sesionesNinos = {
     cantidad: 5,
 };
 
-const sesionesSociales = {
-    nombre: "sociales",
+const sesionesTeens = {
+    nombre: "teens",
     precio: 2000,
     cantidad: 5,
 };
 
+const sesionesFineArt = {
+    nombre: "fine art",
+    precio: 5000,
+    cantidad: 5,
+};
+
+const sesionesNavidad = {
+    nombre: "navidad",
+    precio: 5000,
+    cantidad: 5,
+};
 
 const sesionesComunion = {
     nombre: "comunion",
@@ -199,8 +214,14 @@ const sesionesComunion = {
     cantidad: 5,
 };
 
+const sesionesEscolares = {
+    nombre: "escolares",
+    precio: 5000,
+    cantidad: 5,
+};
+
 //Declaro array de objetos a la venta
-const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacido, sesionesNinos, sesionesSociales, sesionesComunion, ];
+const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacidos, sesionesBebes, sesionesNinos, sesionesTeens, sesionesFineArt, sesionesNavidad, sesionesEscolares, sesionesComunion, ];
 
 /*
 
@@ -303,9 +324,13 @@ resume.append(infoSesiones);
 //clase 9 Eventos
 
 const botonComprarDulceEspera = document.getElementById("botonComprarDulceEspera");
-const botonComprarRecienNacido = document.getElementById("botonComprarRecienNacido");
+const botonComprarRecienNacidos = document.getElementById("botonComprarRecienNacidos");
+const botonComprarBebes = document.getElementById("botonComprarBebes");
 const botonComprarNinos = document.getElementById("botonComprarNinos");
-const botonComprarSociales = document.getElementById("botonComprarSociales");
+const botonComprarTeens = document.getElementById("botonComprarTeens");
+const botonComprarFineArt = document.getElementById("botonComprarFineArt");
+const botonComprarNavidad = document.getElementById("botonComprarNavidad");
+const botonComprarEscolares = document.getElementById("botonComprarEscolares");
 const botonComprarComunion = document.getElementById("botonComprarComunion");
 
 function agregarAlCarrito(name) {
@@ -316,9 +341,13 @@ function agregarAlCarrito(name) {
 };
 
 botonComprarDulceEspera.onclick = () => agregarAlCarrito ("dulce espera");
-botonComprarRecienNacido.onclick = () => agregarAlCarrito ("recien nacido");
+botonComprarRecienNacidos.onclick = () => agregarAlCarrito ("recien nacidos");
+botonComprarBebes.onclick = () => agregarAlCarrito ("bebes");
 botonComprarNinos.onclick = () => agregarAlCarrito ("ninos");
-botonComprarSociales.onclick = () => agregarAlCarrito ("sociales");
+botonComprarTeens.onclick = () => agregarAlCarrito ("teens");
+botonComprarFineArt.onclick = () => agregarAlCarrito ("fine art");
+botonComprarNavidad.onclick = () => agregarAlCarrito ("navidad");
+botonComprarEscolares.onclick = () => agregarAlCarrito ("escolares");
 botonComprarComunion.onclick = () => agregarAlCarrito ("comunion");
 
 
