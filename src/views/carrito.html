@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras de sesiones fotoráficas. Valeria Paulina Photography</title>
-    <meta name="description" content="Desde el carrito podés comprar las sesiones fotográficas ofrecidas. Obtené importantes descuentos. Sesiones de fotografía en Buenos Aires.">
-    <meta name="keywords" content="carrito, compras, sesiones, fotografía, profesional, artística, Valeria Paulina Photography, fotografia en Buenos Aires, Argentina, retratos, embarazo, niños, bebés, infantil, familias, navidad, navideñas, escolares, comunión, adolescentes, Fine Art. ">
-    <meta property= "og:image" content="">
+    <title>Carrito de compras de sesiones fotoráficas | Valeria Paulina Photography</title>
+    <meta name="description"
+        content="Desde el carrito podés comprar las sesiones fotográficas ofrecidas. Obtené importantes descuentos. Sesiones de fotografía en Buenos Aires.">
+    <meta name="keywords"
+        content="carrito, compras, sesiones, fotografía, profesional, artística, Valeria Paulina Photography, fotografia en Buenos Aires, Argentina, retratos, embarazo, niños, bebés, infantil, familias, navidad, navideñas, escolares, comunión, adolescentes, Fine Art. ">
+    <meta property="og:image" content="">
     <!-- acá va el favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png">
@@ -37,7 +40,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    
+    <div class="carrito">
+        <div class="carrito__img"><img src="../assets/image/favorita-nena-sunset.jpg"
+                alt="niña acomodándose el vestido en la playa sobre una roca, al atardecer." width="100%">
+
+        </div>
+        <div class="carrito__container">
+            <div class="carrito__encabezado">
+                <h3 class="carrito__titulo">Carrito</h3>
+                <span class="carrito__cruz">
+                    <a href="../views/shop.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="#ffffff" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z" />
+                        </svg></a>
+                </span>
+
+            </div>
+            <div class="carrito__contenido">
+                <div class="carrito__sesiones">
+                    <img src="../assets/image/comuion-nena-espalda.jpg" alt="niña de espaldas mirando al lago, con vestido de Comunión" width="100%">
+                    <div class="carrito__info">
+                        <h3 class="carrito_sesion" >Sesiones Primera Comunión</h3>
+                        
+                        <span class="precio">$5000</span>
+                        <select class="carrito__select" name="cantidad" id="">
+                        
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="precio">Subtotal</span>
+                        <span class="precio">$5000</span>
+                        <span class="carrito_quitar"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="carrito__cupon">
+                <label class="carrito__texto" for="">Cupón</label>
+                <input type="text">
+                <button class="contactos">Enviar</button>
+            </div>
+            <div class="carrito__total">
+                <span class="carrito__texto">Total</span>
+                <span class="carrito__texto">$5000</span>
+                <button class="contactos">Pagar</button>
+            </div>
+            
+        </div>
+
+
+    </div>
 </body>
+
 </html>
