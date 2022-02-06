@@ -246,7 +246,7 @@
 
 .body-home {
   display: grid;
-  grid-template: 147px 1fr 60px/1fr;
+  grid-template: 4fr 4fr 1fr/1fr;
   position: relative;
 }
 
@@ -576,7 +576,7 @@
 
 /*Título de "Shop"*/
 .sesiones-titulo {
-  color: #E0A098;
+  color: #cf938c;
   font-family: "Raleway", sans-serif;
   text-align: center;
   width: 90%;
@@ -893,8 +893,9 @@ a {
   grid-column: 1/3;
   grid-row: 1/2;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .header-home {
@@ -945,7 +946,7 @@ a {
 
 h1 {
   font-family: "Satisfy", cursive;
-  color: #ffed7a;
+  color: #98CBCB;
   font-size: 60px;
   padding: 1px;
   padding-left: 15px;
@@ -968,7 +969,7 @@ h1 {
 }
 .h1-home {
   font-family: "Satisfy", cursive;
-  color: #ffed7a;
+  color: #fde757;
   font-size: 60px;
   background-color: transparent;
   padding: 5px;
@@ -982,7 +983,7 @@ h1 {
 
 .header__ph {
   font-family: "Lora", serif;
-  color: #ffed7a;
+  color: #98CBCB;
   font-weight: lighter;
   font-size: 20px;
   font-variant: small-caps;
@@ -998,7 +999,7 @@ h1 {
 .header__ph-home {
   background-color: transparent;
   font-family: "Lora", serif;
-  color: #ffed7a;
+  color: #fde757;
   font-weight: lighter;
   font-size: 20px;
   font-variant: small-caps;
@@ -1016,7 +1017,7 @@ h1 {
 }
 
 .nav__link {
-  color: #98CBCB;
+  color: #279292;
   list-style-type: none;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -1241,7 +1242,7 @@ h3 {
 
 p {
   font-family: "Raleway", sans-serif;
-  color: #bd5a4c;
+  color: #8b2b1e;
 }
 
 * {
