@@ -186,13 +186,13 @@ const sesionesBebes = {
 
 const sesionesNinos = {
     nombre: "ninos",
-    precio: 4000,
+    precio: 5000,
     cantidad: 5,
 };
 
 const sesionesTeens = {
     nombre: "teens",
-    precio: 2000,
+    precio: 5000,
     cantidad: 5,
 };
 
@@ -210,7 +210,7 @@ const sesionesNavidad = {
 
 const sesionesComunion = {
     nombre: "comunion",
-    precio: 3000,
+    precio: 5000,
     cantidad: 5,
 };
 
@@ -353,3 +353,11 @@ botonComprarComunion.onclick = () => agregarAlCarrito ("comunion");
 
 
 
+//da total al hacer clic en el botón "total"
+
+
+document.getElementById("botonTotal").onclick = () =>{
+const totalCarrito = carrito.reduce ((acc,el) => acc + el.precio,0);
+console.log(totalCarrito);
+alert("Total a pagar: $"+ totalCarrito);
+}
