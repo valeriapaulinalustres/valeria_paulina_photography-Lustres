@@ -26,6 +26,36 @@
 
 }
 
+.contenedor-home-fotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+.contenedor-home-fotos__contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-home-fotos__img-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-home-fotos__img{
+    border-radius: 50%;
+    size: 30%;
+}
+
+
 .contenedor-celular {
     display: none;
 }
@@ -79,6 +109,8 @@
         margin: 3%;
         display: block;
     }
-
+    .contenedor-home-fotos{
+        display: none;
+    }
 
 }
