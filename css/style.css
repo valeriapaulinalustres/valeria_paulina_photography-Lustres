@@ -704,6 +704,10 @@
   }
 }
 /*Paleta de colores celeste: #98CBCB, rosa viejo:#E0A098, rosa nuevo: #e48c80, amarillo: #ffed7a , FONDO: #fefeec, gris: #C7BFB3, cremita:#fffff2*/
+.body-carrito {
+  background-color: #E0A098;
+}
+
 .carrito {
   display: flex;
   flex-direction: row;

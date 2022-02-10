@@ -1,6 +1,9 @@
 //Carrito
 @import "../base/colores";
 
+.body-carrito{
+    background-color: $rosa;
+}
 .carrito {
     display: flex;
     flex-direction: row;
