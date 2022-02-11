@@ -221,7 +221,7 @@ const sesionesEscolares = {
 };
 
 //Declaro array de objetos a la venta
-const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacidos, sesionesBebes, sesionesNinos, sesionesTeens, sesionesFineArt, sesionesNavidad, sesionesEscolares, sesionesComunion, ];
+//const sesionesFotograficas = [sesionesDulceEspera, sesionesRecienNacidos, sesionesBebes, sesionesNinos, sesionesTeens, sesionesFineArt, sesionesNavidad, sesionesEscolares, sesionesComunion, ];
 
 /*
 
@@ -356,7 +356,7 @@ botonComprarComunion.onclick = () => agregarAlCarrito ("comunion");
 //da total al hacer clic en el botón "total"
 
 
-document.getElementById("botonTotal").onclick = () =>{
+document.getElementById("botonTotalShop").onclick = () =>{
 const totalCarrito = carrito.reduce ((acc,el) => acc + el.precio,0);
 console.log(totalCarrito);
 alert("Total a pagar: $"+ totalCarrito);

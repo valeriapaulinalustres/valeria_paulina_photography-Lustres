@@ -3,6 +3,10 @@
 
 .body-carrito{
     background-color: $rosa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .carrito {
     display: flex;
@@ -10,7 +14,9 @@
 
 }
 
-;
+.sesiones-ofrecidas-carrito{
+    background-color: $celeste;
+}
 
 .carrito__img {
     width: 60%;
@@ -74,7 +80,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 
+}
+.products{
+    background-color: $celeste;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .carrito__sesion {
@@ -96,6 +110,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: scroll;
+    height: 350px;
+    
 }
 
 

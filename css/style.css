@@ -706,11 +706,19 @@
 /*Paleta de colores celeste: #98CBCB, rosa viejo:#E0A098, rosa nuevo: #e48c80, amarillo: #ffed7a , FONDO: #fefeec, gris: #C7BFB3, cremita:#fffff2*/
 .body-carrito {
   background-color: #E0A098;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .carrito {
   display: flex;
   flex-direction: row;
+}
+
+.sesiones-ofrecidas-carrito {
+  background-color: #98CBCB;
 }
 
 .carrito__img {
@@ -766,6 +774,14 @@
   align-items: center;
 }
 
+.products {
+  background-color: #98CBCB;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .carrito__sesion {
   font-size: 14px;
   text-align: center;
@@ -785,6 +801,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: scroll;
+  height: 350px;
 }
 
 .carrito__cupon {
