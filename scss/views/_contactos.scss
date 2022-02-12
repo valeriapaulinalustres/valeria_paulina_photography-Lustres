@@ -51,8 +51,9 @@
     border: #ffffff;
     color: #ffffff;
     margin: 5px;
-
-    opacity: 50%;
+padding: 2px;
+font-family: 'Raleway', sans-serif;
+    opacity: 70%;
     border-radius: 5px;
     height: 60px;
 
@@ -66,6 +67,8 @@
     height: 300px;
 
     font-size: 20px;
+    border: none;
+    
 }
 
 .formulario-input {
@@ -77,6 +80,8 @@
     border-radius: 5px;
     height: 20px;
     transition: all 2s;
+    padding: 2px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .formulario-input:focus {
@@ -109,6 +114,7 @@
     margin: 5px;
     background-color: #fffff3;
     text-align: center;
+    border: 2px solid $celeste;
 
 }
 
@@ -155,6 +161,7 @@
         width: 80%;
         height: 50px;
         opacity: 100%;
+        
     }
 
     .formulario:focus {
@@ -167,6 +174,7 @@
     .formulario-input {
         width: 70%;
         opacity: 100%;
+        
     }
 
     .formulario-input:focus {

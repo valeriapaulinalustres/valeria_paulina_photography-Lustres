@@ -18,7 +18,20 @@ const showProductCarts = () => {
 
             </div>
         `
+        /*
+//para borrar item de carro
+
+ const botonBorrarItem = document.getElementById("deleteItem")
+        botonBorrarItem.dataset.product = product
+        botonBorrarItem.addEventListener("click", borrarItemCarrito)
         
+function borrarItemCarrito (evento){ 
+    const id = evento.target.dataset.item;
+    CART = CART.filter((CARTid) => {
+        return CARTid !== id;
+    }
+
+*/
     })
 
     divCart.innerHTML = htmlListProducts

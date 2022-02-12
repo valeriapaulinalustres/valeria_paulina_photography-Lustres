@@ -134,18 +134,20 @@
 /*volver de Galería*/
 
 .volver {
-    color: $rosa;
-    background-color: transparent;
+    color: white;
+    background-color: $rosa;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .volver:hover {
-    background-color: $rosa;
-    color: $amarillo-claro;
+    background-color: $celeste;
+    color: white;
     padding: 3px 6px;
     border-radius: 15px;
 

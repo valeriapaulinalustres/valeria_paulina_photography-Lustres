@@ -31,15 +31,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3%;
+    padding: 2%;
 }
 .contenedor-home-fotos__contenido{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
 }
 
 .contenedor-home-fotos__img-texto{
@@ -71,7 +70,9 @@
 .copyright--home {
     color: map-get($color-letra, color);
 }
-
+.contenedor-home-fotos__img-texto{
+    padding: 3%;
+}
 //Responsive celular
 @media only screen and (max-width:480px) {
 
