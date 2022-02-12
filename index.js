@@ -1,4 +1,7 @@
 
+
+//muestra listado de sesiones en el carrito
+
 const showProductCarts = () => {
     const divCart = document.getElementById("productsOnCart")
     let htmlListProducts = ""
@@ -11,15 +14,19 @@ const showProductCarts = () => {
                 <i>Cantidad: ${product.quantity}</i>
                 <p>Unitario: $ ${product.unit_price}</p>
                 <p>Total: $ ${product.total}</p>
+                <button class="contactos" id="deleteItem">❌</button>
 
             </div>
         `
+        
     })
 
     divCart.innerHTML = htmlListProducts
 
     registerClickEvent()
 }
+
+//muestra botones para seleccionar filtrado
 
 const showProducts = (category='all') => {
     const divProducts = document.getElementById("products")
@@ -31,14 +38,15 @@ const showProducts = (category='all') => {
     else if(category == 'expensive') products = PRODUCTS.filter(p => p.price >= 6000)
     else products = PRODUCTS
 
+    //muestra listado de sesiones ofrecidas
     products.forEach(product => {
         htmlListProducts += `
-            <div style="border: 2px solid white">
+            <div class="container-js" style="border: 2px solid white">
                 <img src="${product.img}" height="50"></img><br>
                 <b>${product.name}</b>
                 <p>$ ${product.price}</p>
 
-                <button class="addCart col-sm" id="p-${product.id}">Comprar 🛒</button>
+                <button class="addCart contactos" id="p-${product.id}">Comprar 🛒</button>
             </div>
         `
     })
@@ -48,6 +56,8 @@ const showProducts = (category='all') => {
     registerClickEvent()
 }
 
+//evento clic en botón comprar
+
 const registerClickEvent = () => {
 
     const btnAddCarts = document.getElementsByClassName("addCart")
@@ -56,6 +66,8 @@ const registerClickEvent = () => {
     }
 
 }
+
+//muestra lo que se va agregando al carro
 
 const addCart = (event) => {
     const productId = parseInt(event.target.id.split("-")[1])
@@ -67,12 +79,17 @@ const addCart = (event) => {
     else {
         const productCart = new ProductCart(product)
         CART.push(productCart)
-        
+        //actualiza localStorage
+        updateCache()
+        //
     }
 
     showProductCarts()
     CalculateTotalCart()
+    
 }
+
+//suma el total de la compra
 
 const CalculateTotalCart = () => {
     let suma = 0
@@ -87,52 +104,5 @@ showProducts()
 
 document.getElementById("btnShowProductAll").onclick = () => { showProducts('all') }
 document.getElementById("btnShowProductCheap").onclick = () => { showProducts('cheap') }
-document.getElementById("btnShowProductExpensives").onclick = () => { showProducts('expensive') }
+document.getElementById("btnShowProductExpensive").onclick = () => { showProducts('expensive') }
 
-
-/*
-//aplica descuento al valor total de la compra si es que tiene un código de descuento
-
-const descuento = 20;
-
-function precioConDescuento(precio, porcentaje) {
-    return (precio - (precio * porcentaje / 100));
-
-};
-
-document.getElementById("btnDiscount").onclick = () => {
-
-   
-    let codigo = "1234"
-
-
-
-let codigoDescuento = document.getElementById("codigoDescuento");
-
-if (codigoDescuento == codigo) {
-    alert("código correcto")
-        //"El precio final es de: " + " " + "$" + precioConDescuento(totalSesiones, descuento));
-
-} else {
-    alert("Código incorrecto")
-
-}
-
-}
-*/
-
-/*
-const updateCache = () => {
-    const cartJSON = JSON.stringify(CART)
-    localStorage.setItem("CART", cartJSON)
-}
-
-const getCache = () => {
-    const cartJSON = localStorage.getItem("CART")
-    if(CARTJSON) CART = JSON.parse(cartJSON)
-    listBag()
-}
-
-getCache()
-
-*/

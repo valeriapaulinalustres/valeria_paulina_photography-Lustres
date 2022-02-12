@@ -782,6 +782,13 @@
   align-items: center;
 }
 
+.container-js {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .carrito__sesion {
   font-size: 14px;
   text-align: center;
@@ -802,7 +809,7 @@
   align-items: center;
   text-align: center;
   overflow: scroll;
-  height: 350px;
+  height: 700px;
 }
 
 .carrito__cupon {

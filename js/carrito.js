@@ -1,3 +1,4 @@
+//clase para construir objetos(sesiones)
 
 class ProductCart {
 
