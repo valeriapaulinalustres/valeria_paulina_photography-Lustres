@@ -2,7 +2,7 @@
 
 /*Inicio Header*/
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -23,8 +23,8 @@ a{
     flex-direction: column;
     align-items: center;
     z-index: 5;
-    
-    
+
+
 }
 
 .nav {
@@ -64,6 +64,7 @@ a{
 
 
 }
+
 .label-navbar {
     display: none;
     width: 25px;
@@ -112,7 +113,7 @@ h1 {
     font-size: $letra-grande;
     background-color: transparent;
     padding: 5px;
-    
+
 
 }
 
@@ -138,7 +139,7 @@ h1 {
 }
 
 .header__ph-home {
-    
+
     font-family: 'Lora', serif;
     color: $amarillo-oscuro;
     font-weight: bold;
@@ -165,7 +166,7 @@ h1 {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     display: block;
-    
+
 
 }
 
@@ -222,9 +223,11 @@ h1 {
         align-items: center;
 
     }
-.header-home{
-    margin-top: 30px;
-}
+
+    .header-home {
+        margin-top: 30px;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -249,7 +252,7 @@ h1 {
 
     .label-navbar-home {
         display: block;
-        
+
 
 
     }
@@ -273,10 +276,10 @@ h1 {
         justify-content: center;
 
         align-self: center;
-        margin-left:0;
-        padding-left:0;
+        margin-left: 0;
+        padding-left: 0;
 
-        
+
 
     }
 
@@ -310,7 +313,7 @@ h1 {
         margin-top: 20px;
         z-index: 5;
         display: block;
-    
+
     }
 
     .label-navbar {
@@ -334,14 +337,14 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-self: center;
-        margin-left:0;
-        padding-left:0;
+        margin-left: 0;
+        padding-left: 0;
 
     }
 
     .nav {
         align-self: center;
-        
+
         border-bottom: solid 1px $celeste;
     }
 
@@ -353,9 +356,9 @@ h1 {
 
 //Responsive Tablet
 @media only screen and (min-width: 481px) and (max-width:968px) {
-        
+
     .h1-home {
-        
+
         padding-bottom: 0;
     }
 
@@ -382,8 +385,8 @@ h1 {
 
     .label-navbar-home {
         display: block;
-        
-    
+
+
     }
 
     .nav-home-contenedor {
@@ -400,14 +403,14 @@ h1 {
     }
 
     .nav-home-ul {
-       
+
         display: flex;
         flex-direction: column;
         justify-content: center;
 
         align-self: center;
-        margin-left:0;
-        padding-left:0;
+        margin-left: 0;
+        padding-left: 0;
 
     }
 
@@ -431,8 +434,8 @@ h1 {
 
         z-index: 5;
         display: block;
-        
-        
-        
+
+
+
     }
 }

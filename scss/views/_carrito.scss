@@ -1,19 +1,21 @@
 //Carrito
 @import "../base/colores";
 
-.body-carrito{
+.body-carrito {
     background-color: $rosa;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
+
 .carrito {
     display: flex;
     flex-direction: row;
 
 }
-.sesiones-ofrecidas-carrito{
+
+.sesiones-ofrecidas-carrito {
     background-color: $celeste;
 }
 
@@ -79,23 +81,26 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 
 }
-.products{
+
+.products {
     background-color: $celeste;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.container-js{
+
+.container-js {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
 }
+
 .carrito__sesion {
     font-size: 14px;
     text-align: center;
@@ -116,7 +121,7 @@
     overflow: auto;
     height: 270px;
     margin-top: 30px;
-    
+
 }
 
 

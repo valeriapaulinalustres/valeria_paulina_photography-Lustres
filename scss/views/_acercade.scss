@@ -1,4 +1,3 @@
-
 @import "../../scss/base/mapas";
 
 /*Página Acerca de*/
@@ -23,10 +22,15 @@
 
 }
 
-@each $key, $value in $color-letra {
-    .copyright--#{$key}{color:$value;}
-    
-};
+@each $key,
+$value in $color-letra {
+    .copyright--#{$key} {
+        color: $value;
+    }
+
+}
+
+;
 
 
 //Mobile 

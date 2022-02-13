@@ -1,11 +1,12 @@
 @import "../../scss/base/mixins";
 
 /*Página Shop*/
-.shop__encabezado{
+.shop__encabezado {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .shop-main {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -13,7 +14,8 @@
     flex-direction: column;
     justify-content: space-around;
 }
-.boton-carrito{
+
+.boton-carrito {
     size: 30px;
     margin-right: 20px;
     background-color: $rosa;
@@ -25,7 +27,8 @@
     padding: 5px;
 
 }
-.boton-carrito:hover{
+
+.boton-carrito:hover {
     background-color: $celeste;
     border-top-color: $celeste-claro;
     border-left-color: $celeste-claro;
@@ -176,15 +179,17 @@
     .boton__letra {
         font-size: 12px;
     }
-    .shop__encabezado{
+
+    .shop__encabezado {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .sesiones-titulo{
+
+    .sesiones-titulo {
         width: 100%;
     }
-    
+
 
 }
