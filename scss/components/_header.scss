@@ -1,3 +1,5 @@
+@import "../../scss/base/variables";
+
 /*Inicio Header*/
 
 a{
@@ -76,8 +78,8 @@ a{
 
 h1 {
     font-family: 'Satisfy', cursive;
-    color: $rosa;
-    font-size: 60px;
+    color: $amarillo-oscuro;
+    font-size: $letra-grande;
     padding: 1px;
     padding-left: 15px;
     padding-right: 15px;
@@ -107,23 +109,18 @@ h1 {
 .h1-home {
     font-family: 'Satisfy', cursive;
     color: $amarillo-oscuro;
-    font-size: 60px;
+    font-size: $letra-grande;
     background-color: transparent;
     padding: 5px;
-    /*
-    animation-name: marca;
-    animation-iteration-count: initial;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-*/
+    
 
 }
 
 .header__ph {
     font-family: 'Lora', serif;
-    color: $rosa-oscuro;
-    font-weight: lighter;
-    font-size: 20px;
+    color: $amarillo-oscuro;
+    font-weight: bolder;
+    font-size: $letra-chica;
     font-variant: small-caps;
     letter-spacing: 3px;
     background-color: transparent;
@@ -144,8 +141,8 @@ h1 {
     
     font-family: 'Lora', serif;
     color: $amarillo-oscuro;
-    font-weight: lighter;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: $letra-chica;
     font-variant: small-caps;
     letter-spacing: 3px;
     text-align: center;
@@ -168,7 +165,7 @@ h1 {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     display: block;
-    background-color: transparent;
+    
 
 }
 
@@ -233,7 +230,7 @@ h1 {
     }
 
     .header__ph {
-        font-size: 12px;
+        font-size: 15px;
         padding-left: 0px;
         text-align: center;
     }
@@ -244,7 +241,8 @@ h1 {
     }
 
     .header__ph-home {
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: bold;
     }
 
     /*Navegación Home*/
@@ -357,7 +355,7 @@ h1 {
 @media only screen and (min-width: 481px) and (max-width:968px) {
         
     .h1-home {
-        font-size: 40px;
+        
         padding-bottom: 0;
     }
 
@@ -369,12 +367,13 @@ h1 {
     }
 
     .header__ph-home {
-        font-size: 12px;
+        font-size: 18px;
+        font-weight: bold;
 
     }
 
     .header__ph {
-        font-size: 12px;
+        font-size: 18px;
         padding-left: 0px;
         text-align: center;
     }

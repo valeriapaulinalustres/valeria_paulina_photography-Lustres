@@ -29,24 +29,12 @@
 };
 
 
-//Mobile celular
-@media only screen and (max-width:480px) {
+//Mobile 
+@media only screen and (max-width:1200px) {
     .acercade-contenedor {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-}
-
-//Mobile Tablet
-@media only screen and (min-width: 481px) and (max-width:968px) {
-    
-    .acercade-contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
 }

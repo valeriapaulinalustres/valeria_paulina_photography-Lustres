@@ -14,8 +14,23 @@
     justify-content: space-around;
 }
 .boton-carrito{
-    size: 10%;
+    size: 30px;
     margin-right: 20px;
+    background-color: $rosa;
+    border-top-color: $rosa-claro;
+    border-left-color: $rosa-claro;
+    border-bottom-color: $rosa-oscuro;
+    border-right-color: $rosa-oscuro;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+.boton-carrito:hover{
+    background-color: $celeste;
+    border-top-color: $celeste-claro;
+    border-left-color: $celeste-claro;
+    border-bottom-color: $celeste-oscuro;
+    border-right-color: $celeste-oscuro;
 }
 
 .contenedor-shop {
@@ -44,13 +59,19 @@
     grid-row: 2/3;
     margin-left: 1rem;
     margin-right: 1rem;
+    text-align: justify;
+    padding: 5px;
 
 }
 
 .contenedor-shop .precio {
     grid-column: 3/4;
     grid-row: 1/2;
+    text-align: center;
+    color: $celeste-oscuro;
 }
+
+
 
 
 .contenedor-shop button {
@@ -103,7 +124,7 @@
 
 
 //Responsive celular
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:820px) {
 
     /*Página Shop*/
     .contenedor-shop {
@@ -164,9 +185,6 @@
     .sesiones-titulo{
         width: 100%;
     }
-    .boton-carrito{
-        width: 20%;
-        
-    }
+    
 
 }

@@ -101,9 +101,7 @@
     text-align: center;
 }
 
-.precio {
-    color: $celeste;
-}
+
 
 .carrito__texto {
     color: white;
@@ -115,8 +113,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: scroll;
-    height: 700px;
+    overflow: auto;
+    height: 270px;
+    margin-top: 30px;
     
 }
 
