@@ -19,7 +19,7 @@ const showProductCarts = () => {
             </div>
         `
         /*
-//para borrar item de carro
+//para borrar item de carro EN PROCESO, AUN NO FUNCIONA
 
  const botonBorrarItem = document.getElementById("deleteItem")
         botonBorrarItem.dataset.product = product
