@@ -194,7 +194,8 @@ h1 {
 
 
 .nav-home__link {
-    color: $amarillo-claro;
+    color: $amarillo-oscuro;
+    font-weight: bold;
     list-style-type: none;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -225,26 +226,28 @@ h1 {
     }
 
     .header-home {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     h1 {
         font-size: 40px;
+       
     }
 
     .header__ph {
         font-size: 15px;
         padding-left: 0px;
         text-align: center;
+
     }
 
     .h1-home {
-        font-size: 37px;
+        font-size: 45px;
         padding-bottom: 0;
     }
 
     .header__ph-home {
-        font-size: 14px;
+        font-size: 20px;
         font-weight: bold;
     }
 
