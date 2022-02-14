@@ -14,24 +14,12 @@ const showProductCarts = () => {
                 <i>Cantidad: ${product.quantity}</i>
                 <p>Unitario: $ ${product.unit_price}</p>
                 <p>Total: $ ${product.total}</p>
-                <button class="contactos" id="deleteItem">❌</button>
+                <button class="contactos deleteItem" id="p-${product.id}">❌</button>
 
             </div>
         `
-        /*
-//para borrar item de carro EN PROCESO, AUN NO FUNCIONA
-
- const botonBorrarItem = document.getElementById("deleteItem")
-        botonBorrarItem.dataset.product = product
-        botonBorrarItem.addEventListener("click", borrarItemCarrito)
         
-function borrarItemCarrito (evento){ 
-    const id = evento.target.dataset.item;
-    CART = CART.filter((CARTid) => {
-        return CARTid !== id;
-    }
 
-*/
     })
 
     divCart.innerHTML = htmlListProducts
@@ -117,5 +105,90 @@ showProducts()
 
 document.getElementById("btnShowProductAll").onclick = () => { showProducts('all') }
 document.getElementById("btnShowProductCheap").onclick = () => { showProducts('cheap') }
-document.getElementById("btnShowProductExpensive").onclick = () => { showProducts('expensive') }
+document.getElementById("btnShowProductExpensive").onclick = () => { showProducts('expensive') };
 
+
+//para borrar item de carro EN PROCESO, AUN NO FUNCIONA
+
+//let botonBorrarItem = document.getElementsByClassName("deleteItem")
+ // botonBorrarItem.onclick = () => {console.log("hola")};      
+//botonBorrarItem.addEventListener("click", borrarItemCarrito)
+
+//function borrarItemCarrito () {console.log ("borro")};
+/*
+function borrarItemCarrito (evento){ 
+const id = parseInt(evento.target.id.split("-")[1])
+CART = CART.filter((CARTid) => {
+return CARTid !== id;
+}
+)}
+*/
+
+
+/*
+
+const deleteItem = () => {
+
+const botonDeleteItem = document.getElementsByClassName("deleteItem")
+for(const btn of botonDeleteItem) {
+    btn.onclick = () =>{console.log("borro")}
+}
+
+}
+*/
+/*
+const addCart = (event) => {
+const productId = parseInt(event.target.id.split("-")[1])
+
+
+const productInCart = CART.find(p => p.id == productId)
+
+if(productInCart) productInCart.add()
+else {
+    const productCart = new ProductCart(product)
+    CART.push(productCart)
+    //actualiza localStorage
+    updateCache()
+    //
+}
+
+showProductCarts()
+CalculateTotalCart()
+
+}
+
+
+
+
+
+
+
+let boton = document.getElementsByClassName("deleteItem")
+//boton.addEventListener("click", respuestaClick)
+//function respuestaClick () {
+//    console.log ("borro")
+//}
+
+
+boton.addEventListener("click", myFunction);
+
+function myFunction() {
+  console.log("borro")
+}
+*/
+/*
+const registerClickDelete = () => {
+
+    const btnRemoveCarts = document.getElementsByClassName("deleteItem")
+    for(const btn of btnRemoveCarts) {
+        btn.onclick = removeCart
+    }
+
+} ;
+function removeCart () {console.log("borro")}
+*/
+
+let boton = document.getElementById("deleteItem")
+      boton.addEventListener("click", respuestaClick)
+      function respuestaClick(){
+        console.log("Respuesta evento");}
