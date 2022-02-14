@@ -107,3 +107,23 @@ document.getElementById("btnShowProductAll").onclick = () => { showProducts('all
 document.getElementById("btnShowProductCheap").onclick = () => { showProducts('cheap') }
 document.getElementById("btnShowProductExpensive").onclick = () => { showProducts('expensive') };
 
+
+//para borrar item del carrito (puse el console.log para ver si funcionaba)
+
+let boton = document.getElementsByClassName("deleteItem")
+boton.addEventListener("click", respuestaClick)
+function respuestaClick(){
+  console.log("Respuesta");
+}
+
+//en realidad, la función será esta:
+/*
+const respuestaClick = (event) => {
+    const id = parseInt(event.target.id.split("-")[1]);
+    CART = CART.filter ((cartId) =>{
+        return cartId !== id
+    })
+
+
+}
+*/
