@@ -4,24 +4,20 @@ const showProductCarts = () => {
     const divCart = document.getElementById("productsOnCart")
     let htmlListProducts = ""
 
+
     CART.forEach(product => {
         htmlListProducts += `
-            <div style="border: 1px solid #98CBCB">
+            <div id="cartItems" style="border: 1px solid #98CBCB">
             <img src="${product.img}" height="50"></img><br>
                 <b>${product.name}</b><br>
                 <i>Cantidad: ${product.quantity}</i>
                 <p>Unitario: $ ${product.unit_price}</p>
                 <p>Total: $ ${product.total}</p>
                 <button class="contactos deleteItem" id="${product.id}">❌</button>
-
             </div>
         `
-
-
-
-
-
     });
+
 
     divCart.innerHTML = htmlListProducts;
 
@@ -30,27 +26,42 @@ const showProductCarts = () => {
 
     let botones = document.getElementsByClassName("deleteItem");
     for (const boton of botones) {
-        boton.onclick = () => {
+        boton.onclick = (event) => {
             //alert(boton.id);
-            boton.onclick = deleteItemCart;
 
-            
-        };
+            const id = parseInt(event.target.id);
+            alert("funciona" + id);
+            //deleteCartItem(boton.onclick);
+
+            //function deleteCartItem() {
+
+function hh (id){if (id ===2) {alert("es dos")
+    
+} else {alert("no es dos")
+    
+}}
+
+hh(id)
+
+
+
+
+
+/*
+
+                CART = CART.filter(compareId);
+
+                function compareId(carritoId) {
+                    return carritoId !== id
+                }
+*/
+
+
+        //    }
+        }
+
+
     }
-
-
-
-const deleteItemCart = (event) => {
-    const id = parseInt(event.target.id);
-    alert("puto" + id);
-    let erasedCart = "";
-     erasedCart = CART.filter ((cartId) =>{
-        return cartId !== id
-    });
-}
-
-
-
 
     registerClickEvent();
 };
@@ -141,9 +152,13 @@ document.getElementById("btnShowProductCheap").onclick = () => {
 }
 document.getElementById("btnShowProductExpensive").onclick = () => {
     showProducts('expensive')
-};
-
-
-
-
-
+}
+/*
+ // Vaciar el carrito 
+ let cartItems = document.getElementById("cartItems")
+ let botonVaciarTodo = document.getElementById("vaciarTodo")
+ botonVaciarTodo.addEventListener('click', borrarNodoCartItems)
+ function borrarNodoCartItems (){
+     return cartItems.remove()
+ }
+*/
