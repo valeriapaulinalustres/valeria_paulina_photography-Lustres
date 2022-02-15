@@ -17,11 +17,14 @@
 
 .sesiones-ofrecidas-carrito {
     background-color: $celeste;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.carrito__img {
-    width: 60%;
-}
+
 
 .carrito__container {
     padding: 10px;
@@ -29,7 +32,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: $rosa;
-    width: 40%
+    width: 70%
 }
 
 ;
@@ -88,8 +91,9 @@
 .products {
     background-color: $celeste;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -114,13 +118,12 @@
 
 .carrito__info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: auto;
-    height: 270px;
-    margin-top: 30px;
+    
 
 }
 
@@ -159,7 +162,11 @@
     ;
 
     .carrito__container {
-        width: 100%;
+        background-color: $celeste;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
     }
 
     .carrito__img {
@@ -190,9 +197,7 @@
 
     ;
 
-    .carrito__container {
-        width: 80%;
-    }
+    
 
     .carrito__img {
         display: none;

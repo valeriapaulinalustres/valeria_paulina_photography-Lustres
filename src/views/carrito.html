@@ -45,10 +45,6 @@
 
 <body class="body-carrito">
     <div class="carrito">
-        <div class="carrito__img"><img src="../assets/image/favorita-nena-sunset.jpg"
-                alt="niña acomodándose el vestido en la playa sobre una roca, al atardecer." width="100%">
-
-        </div>
         <div class="carrito__container">
             <div class="carrito__encabezado">
                 <h3 class="carrito__titulo">Carrito</h3>
@@ -60,76 +56,59 @@
                                 d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z" />
                         </svg></a>
                 </span>
-
             </div>
-            <div class="carrito__contenido">
-                <div class="carrito__sesiones">
-                    <!--
-                    <img src="../assets/image/comuion-nena-espalda.jpg"
-                        alt="niña de espaldas mirando al lago, con vestido de Comunión" width="100%">
-                    -->
-                    <div class="carrito__info" id="productsOnCart">
-
-
-                        <!--
-                        <h3 class="carrito_sesion">Sesiones Primera Comunión</h3>
-
-                        <span class="precio">$5000</span>
-                        <select class="carrito__select" name="cantidad" id="">
-
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    
-                        <span class="precio">Subtotal</span>
-                        <span class="precio"></span>
-                        <span class="carrito_quitar"></span>
-                -->
-                    </div>
-
-                </div>
-
+            <div class="carrito__info" id="productsOnCart">
+                <!--
+                <h3 class="carrito_sesion">Sesiones Primera Comunión</h3>
+                <span class="precio">$5000</span>
+                <select class="carrito__select" name="cantidad" id="">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            
+                <span class="precio">Subtotal</span>
+                <span class="precio"></span>
+                <span class="carrito_quitar"></span>
+        -->
             </div>
+
             <div class="carrito__cupon">
                 <label class="carrito__texto" for="">Cupón 20% OFF</label>
                 <input type="text" value="ingresá el código" id="codigoDescuento">
                 <button class="contactos" id="btnDiscount">Enviar</button>
             </div>
             <div class="carrito__total">
-                
                 <!--<span class="carrito__texto">Total</span>-->
                 <span class="carrito__texto">Total ($ <i id="totalCart"></i>)</span>
                 <button class="contactos">Pagar</button>
             </div>
-
         </div>
-
-
-
     </div>
-    <h3>Listado de sesiones ofrecidas</h3>
+    <h3 class="carrito__titulo">Listado de sesiones ofrecidas</h3>
     <div class="sesiones-ofrecidas-carrito">
-        
-        
-        <button id="btnShowProductAll">Todos las sesiones</button>
-        <button id="btnShowProductCheap">Precio inferior a $2000</button>
-        <button id="btnShowProductExpensive">Precio superior a $6000</button>
-<!--Listado de sesiones ofrecidas, desde JavaSript-->
-
-        <div class="products" id="products">
-            <h2 class="carrito__texto">acá ira listado desde JS</h2>
+        <div class="carrito__contenedor-botones">
+            <button class="contactos" id="btnShowProductAll">Todos las sesiones</button>
+            <button class="contactos" id="btnShowProductCheap">Precio inferior a $2000</button>
+            <button class="contactos" id="btnShowProductExpensive">Precio superior a $6000</button>
         </div>
+        <!--Listado de sesiones ofrecidas, desde JavaSript-->
+        <div class="products" id="products">
+            
+        </div>
+    </div>
+    <div class="carrito__img"><img src="../assets/image/favorita-nena-sunset.jpg"
+            alt="niña acomodándose el vestido en la playa sobre una roca, al atardecer." width="100%">
     </div>
     <script src="../../js/formulas.js"></script>
-    
+
     <script src="../../js/sesiones.js"></script>
-    
+
     <script src="../../js/carrito.js"></script>
-    
+
     <script src="../../index.js"></script>
 </body>
 

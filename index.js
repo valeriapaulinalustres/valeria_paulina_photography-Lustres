@@ -1,3 +1,5 @@
+//if ((localStorage.getItem("CART") !== null)) {CART = JSON.parse(localStorage.getItem("CART"))}
+
 //muestra listado de sesiones en el carrito
 
 const showProductCarts = () => {
@@ -7,8 +9,8 @@ const showProductCarts = () => {
 
     CART.forEach(product => {
         htmlListProducts += `
-            <div id="cartItems" style="border: 1px solid #98CBCB">
-            <img src="${product.img}" height="50"></img><br>
+            <div id="cartItems" class="carrito-info" style="border: 1px solid #98CBCB">
+                <img src="${product.img}" width="100"></img><br>
                 <b>${product.name}</b><br>
                 <i>Cantidad: ${product.quantity}</i>
                 <p>Unitario: $ ${product.unit_price}</p>
@@ -30,35 +32,33 @@ const showProductCarts = () => {
             //alert(boton.id);
 
             const id = parseInt(event.target.id);
-            alert("funciona" + id);
+            //alert("funciona" + id);
             //deleteCartItem(boton.onclick);
 
             //function deleteCartItem() {
-                let cartItems = document.getElementById("cartItems")
 
-function hh (id){if (id ===2) {alert("es dos"); cartItems.remove()
-    
-} else {alert("no es dos")
-    
-}}
+            let cartItems = document.getElementById("cartItems")
 
-hh(id)
+            function borrarItem(id) {
+                if (id === id) {
 
+                    //
+                    //if (this.quantity>1) {this.quantity=this.quantity-1
 
-
+                    //else {cartItems.remove()
 
 
-/*
+                    //
 
-                CART = CART.filter(compareId);
 
-                function compareId(carritoId) {
-                    return carritoId !== id
+                    cartItems.remove()
+
                 }
-*/
+            }
 
+            borrarItem(id)
+            //localStorage.removeItem(id)
 
-        //    }
         }
 
 
@@ -154,12 +154,18 @@ document.getElementById("btnShowProductCheap").onclick = () => {
 document.getElementById("btnShowProductExpensive").onclick = () => {
     showProducts('expensive')
 }
-/*
- // Vaciar el carrito 
- let cartItems = document.getElementById("cartItems")
- let botonVaciarTodo = document.getElementById("vaciarTodo")
- botonVaciarTodo.addEventListener('click', borrarNodoCartItems)
- function borrarNodoCartItems (){
-     return cartItems.remove()
- }
-*/
+
+// Vaciar el carrito 
+let cartItems = document.getElementById("cartItems")
+let botonVaciarTodo = document.getElementById("vaciarTodo")
+botonVaciarTodo.addEventListener('click', borrarNodoCartItems)
+
+function borrarNodoCartItems() {
+    alert("funciona")
+    cartItems.remove()
+
+    let productsOnCart = document.getElementById("productsOnCart")
+    productsOnCart.innerHTML = "<p>Carrito Vacío</p>"
+}
+
+//localStorage.clear()
