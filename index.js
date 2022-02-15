@@ -1,5 +1,3 @@
-
-
 //muestra listado de sesiones en el carrito
 
 const showProductCarts = () => {
@@ -14,29 +12,61 @@ const showProductCarts = () => {
                 <i>Cantidad: ${product.quantity}</i>
                 <p>Unitario: $ ${product.unit_price}</p>
                 <p>Total: $ ${product.total}</p>
-                <button class="contactos deleteItem" id="p-${product.id}">❌</button>
+                <button class="contactos deleteItem" id="${product.id}">❌</button>
 
             </div>
         `
-        
 
-    })
 
-    divCart.innerHTML = htmlListProducts
 
-    registerClickEvent()
+
+
+    });
+
+    divCart.innerHTML = htmlListProducts;
+
+
+    //para borrar items del carrito
+
+    let botones = document.getElementsByClassName("deleteItem");
+    for (const boton of botones) {
+        boton.onclick = () => {
+            //alert(boton.id);
+            boton.onclick = deleteItemCart;
+
+            
+        };
+    }
+
+
+
+const deleteItemCart = (event) => {
+    const id = parseInt(event.target.id);
+    alert("puto" + id);
+    let erasedCart = "";
+     erasedCart = CART.filter ((cartId) =>{
+        return cartId !== id
+    });
 }
+
+
+
+
+    registerClickEvent();
+};
+
+
 
 //muestra botones para seleccionar filtrado
 
-const showProducts = (category='all') => {
+const showProducts = (category = 'all') => {
     const divProducts = document.getElementById("products")
     let htmlListProducts = ""
 
     let products = []
 
-    if(category == 'cheap') products = PRODUCTS.filter(p => p.price < 2000)
-    else if(category == 'expensive') products = PRODUCTS.filter(p => p.price >= 6000)
+    if (category == 'cheap') products = PRODUCTS.filter(p => p.price < 2000)
+    else if (category == 'expensive') products = PRODUCTS.filter(p => p.price >= 6000)
     else products = PRODUCTS
 
     //muestra listado de sesiones ofrecidas
@@ -62,7 +92,7 @@ const showProducts = (category='all') => {
 const registerClickEvent = () => {
 
     const btnAddCarts = document.getElementsByClassName("addCart")
-    for(const btn of btnAddCarts) {
+    for (const btn of btnAddCarts) {
         btn.onclick = addCart
     }
 
@@ -75,8 +105,8 @@ const addCart = (event) => {
 
     const product = PRODUCTS.find(p => p.id == productId)
     const productInCart = CART.find(p => p.id == productId)
-    
-    if(productInCart) productInCart.add()
+
+    if (productInCart) productInCart.add()
     else {
         const productCart = new ProductCart(product)
         CART.push(productCart)
@@ -87,7 +117,7 @@ const addCart = (event) => {
 
     showProductCarts()
     CalculateTotalCart()
-    
+
 }
 
 //suma el total de la compra
@@ -103,27 +133,17 @@ const CalculateTotalCart = () => {
 CalculateTotalCart()
 showProducts()
 
-document.getElementById("btnShowProductAll").onclick = () => { showProducts('all') }
-document.getElementById("btnShowProductCheap").onclick = () => { showProducts('cheap') }
-document.getElementById("btnShowProductExpensive").onclick = () => { showProducts('expensive') };
-
-
-//para borrar item del carrito (puse el console.log para ver si funcionaba)
-
-let boton = document.getElementsByClassName("deleteItem")
-boton.addEventListener("click", respuestaClick)
-function respuestaClick(){
-  console.log("Respuesta");
+document.getElementById("btnShowProductAll").onclick = () => {
+    showProducts('all')
 }
-
-//en realidad, la función será esta:
-/*
-const respuestaClick = (event) => {
-    const id = parseInt(event.target.id.split("-")[1]);
-    CART = CART.filter ((cartId) =>{
-        return cartId !== id
-    })
-
-
+document.getElementById("btnShowProductCheap").onclick = () => {
+    showProducts('cheap')
 }
-*/
+document.getElementById("btnShowProductExpensive").onclick = () => {
+    showProducts('expensive')
+};
+
+
+
+
+
