@@ -34,8 +34,9 @@ const showProductCarts = () => {
             //deleteCartItem(boton.onclick);
 
             //function deleteCartItem() {
+                let cartItems = document.getElementById("cartItems")
 
-function hh (id){if (id ===2) {alert("es dos")
+function hh (id){if (id ===2) {alert("es dos"); cartItems.remove()
     
 } else {alert("no es dos")
     
