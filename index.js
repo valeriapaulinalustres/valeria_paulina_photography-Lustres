@@ -28,12 +28,30 @@ const showProductCarts = () => {
         boton.onclick = (event) => {
             const id = parseInt(event.target.id);
             let cartItems = document.getElementById(`cartItems-${id}`);
-            cartItems.remove();
+            //cartItems.remove();
             //busco id del producto para capturar su índice
             const capturarIndiceDelObjetoABorrar = CART.findIndex(
                 (product) => product.id === id
             );
-            CART.splice(capturarIndiceDelObjetoABorrar, 1);
+
+
+            const siBorrar = prompt("¿Seguro desea eliminar del carrito? Responda: si/no ")
+            if (siBorrar === "si")
+            //borrar producto
+            {
+                CART.splice(capturarIndiceDelObjetoABorrar, 1);
+                //borrar nodo del DOM
+                cartItems.remove();
+
+                alert("Producto borrado")
+
+            } else {
+                alert("gracias")
+
+            }
+            
+
+            //CART.splice(capturarIndiceDelObjetoABorrar, 1);
         };
     }
     registerClickEvent();
@@ -52,7 +70,7 @@ const showProducts = (category = "all") => {
     else if (category == "expensive")
         products = PRODUCTS.filter((p) => p.price >= 6000);
     else products = PRODUCTS;
-    
+
 
     //muestra listado de sesiones ofrecidas
     products.forEach((product) => {
