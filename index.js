@@ -161,9 +161,14 @@ function borrarNodoCartItems() {
 //localStorage.clear()
 let askPay = "";
 
+
 //botón Pagar
 const btnPay = document.getElementById("btnPay")
 btnPay.onclick = () => {
+    //uso del SPREAD
+    console.log(...CART)
+    //
+
  askPay = prompt("¿Desea pagar? si/no")
 
 // if else tradicional
