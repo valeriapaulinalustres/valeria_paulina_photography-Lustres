@@ -735,6 +735,8 @@
 .carrito {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .sesiones-ofrecidas-carrito {
@@ -752,7 +754,6 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #E0A098;
-  width: 70%;
 }
 
 .carrito__encabezado {
@@ -818,6 +819,7 @@
 
 .carrito__texto {
   color: white;
+  padding: 3px;
 }
 
 .carrito__info {
@@ -832,6 +834,7 @@
 .carrito__cupon {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #98CBCB;

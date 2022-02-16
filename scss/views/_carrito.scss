@@ -12,6 +12,8 @@
 .carrito {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -32,7 +34,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: $rosa;
-    width: 70%
+    
 }
 
 ;
@@ -51,6 +53,7 @@
 .carrito__titulo {
     color: white;
     width: 90%;
+    
 
 }
 
@@ -114,6 +117,7 @@
 
 .carrito__texto {
     color: white;
+    padding: 3px;
 }
 
 .carrito__info {
@@ -131,6 +135,7 @@
 .carrito__cupon {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: $celeste;
@@ -166,7 +171,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+        
     }
 
     .carrito__img {
