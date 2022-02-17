@@ -36,7 +36,7 @@
 
 .menu-galeria__link {
     display: block;
-    color: $rosa;
+    color: $rosa-oscuro;
     list-style-type: none;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -57,9 +57,7 @@
 .nav-galeria {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding-left: 80px;
-    padding-right: 80px;
-
+   padding-top: 5px;
 
 }
 
@@ -135,7 +133,7 @@
 
 .volver {
     color: white;
-    background-color: $rosa;
+    background-color: $celeste;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     position: fixed;
