@@ -128,6 +128,24 @@ suma >= 20000 && alert("Su carrito supera los $20.000")
 CalculateTotalCart();
 showProducts();
 
+// CUPÓN de descuento
+const discount = 1234;
+
+const btnDiscount = document.getElementById("btnDiscount");
+
+btnDiscount.onclick = () => {
+    let cuponIngresado = parseInt(document.getElementById("cuponIngresado").value);
+    alert("usted ingresó" + cuponIngresado)
+    if (cuponIngresado === discount) { alert("Cupón válido, obtendrá un descuento del 20% sobre el total de su compra.")
+    //aquí falta el cálculo
+} else {alert("Cupón ingresado inválido. Por favor, inténtelo nuevamente.");
+    
+} 
+
+};
+
+
+//botones de filtro de precios
 document.getElementById("btnShowProductAll").onclick = () => {
     showProducts("all");
 };
