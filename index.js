@@ -162,20 +162,29 @@ function borrarNodoCartItems() {
 let askPay = "";
 
 
+
 //botón Pagar
 const btnPay = document.getElementById("btnPay")
 btnPay.onclick = () => {
-    //uso del SPREAD
+    //uso del SPREAD para que salga por consola el contenido del array del carrito (CART)
     console.log(...CART)
-    //
+    
+    let resumen = "";
+    //For of para obtener de cada producto (objeto) del carrito, su numbre y su cantidad, y sacarlo luego por un único alert:
+for (const obj of CART ) {
+//Desestructuración (para evitar usar obj.name y obj.quantity)
+    let {name, quantity} = obj
+    resumen += "Nombre: " + name + ", " + "cantidad: " + quantity + "\n";
+}
+alert("Listado de sesiones en su carrito:" + "\n" + resumen);
 
  askPay = prompt("¿Desea pagar? si/no")
 
-// if else tradicional
+// if else tradicional:
 //if (askPay === "si") {alert("se procederá al pago, muchas gracias por su compra")
 //    } else {alert("muchas gracias")}
     
-//operador avanzado:
+//operador ternario:
 askPay === "si" ? alert("se procederá al pago, muchas gracias por su compra") : alert("muchas gracias")
 
 }
