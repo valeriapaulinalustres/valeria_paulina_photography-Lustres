@@ -244,8 +244,7 @@
 
 .body-home {
   display: grid;
-  grid-template: 147px 1fr 60px/1fr;
-  position: relative;
+  grid-template: 147px 1fr 1fr 50px/1fr;
 }
 
 /*Página Home*/
@@ -940,7 +939,6 @@
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
   color: #fff4ad;
-  background-color: transparent;
   grid-column: 2/3;
   grid-row: 1/2;
   text-align: center;
@@ -949,7 +947,7 @@
 .footer-home {
   background-color: #98CBCB;
   grid-column: 1/3;
-  grid-row: 3/4;
+  grid-row: 4/5;
   display: grid;
   grid-template: 1fr/1fr 1fr 1fr;
   align-items: center;
@@ -957,7 +955,6 @@
 }
 
 .footer-iconos-home {
-  background-color: transparent;
   display: flex;
   flex-direction: row;
   grid-column: 1/2;
