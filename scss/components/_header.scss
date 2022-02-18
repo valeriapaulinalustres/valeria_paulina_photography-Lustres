@@ -23,8 +23,8 @@ a {
     flex-direction: column;
     align-items: center;
     z-index: 5;
-
-
+    background-color: transparent;
+    position: relative;
 }
 
 .nav {
@@ -226,11 +226,12 @@ h1 {
 
     .header-home {
         margin-top: 20px;
+
     }
 
     h1 {
         font-size: 40px;
-       
+
     }
 
     .header__ph {

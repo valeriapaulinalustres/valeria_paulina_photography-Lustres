@@ -12,15 +12,20 @@
 
 .body-home {
     display: grid;
-    grid-template: 147px 1fr 1fr 50px/1fr;
-
+    grid-template: 147px 1fr 50px/1fr;
+    
 }
 
 /*Página Home*/
+.main-home{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .carrousel__inicio {
-    grid-column: 1/3;
-    grid-row: 1/4;
     z-index: -1;
 
 }
@@ -54,16 +59,11 @@
     size: 30%;
 }
 
-
-.contenedor-celular {
+.contenedor-mobile{
     display: none;
 }
 
-.texto-home-celular {
-    display: none;
-}
 
-;
 
 @each $key,
 $value in $color-letra {
@@ -73,7 +73,6 @@ $value in $color-letra {
 
 }
 
-;
 
 .copyright--home {
     color: map-get($color-letra, color);
@@ -85,10 +84,18 @@ $value in $color-letra {
 
 //Responsive celular
 @media only screen and (max-width:480px) {
-
+.contenedor-mobile{
+    display: contents;
+}
+.main-home{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.header-home{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
     .carrousel__inicio {
-        grid-column: 1/3;
-        grid-row: 2/3;
         z-index: 0;
 
     }
