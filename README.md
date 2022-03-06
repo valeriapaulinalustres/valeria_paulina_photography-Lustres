@@ -1,10 +1,10 @@
 # valeria_paulina_photography-Lustres
-Final Proyect as Web Developer student
+Final Proyect as Web Developer and JavaScript course student.
 
 <h1 align="center">Hi 👋, I'm Valeria</h1>
 <h3 align="center">A passionate Full Stack Developer student from Argentina</h3>
 
-- 🔭 I’m currently working on **Valeria Paulina Photography**, my final project of Web Development Course. 
+- 🔭 I’m currently working on several projects. 
 
 - 🌱 I’m currently learning **Full Stack Development**
 
