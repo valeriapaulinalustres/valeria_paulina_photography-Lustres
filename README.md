@@ -1,12 +1,8 @@
 # valeria_paulina_photography-Lustres
-Final Proyect as Web Developer and JavaScript course student.
+Photography website. HTML-CSS-SASS-Bootstrap-JavaScript-GIT
 
-<h1 align="center">Hi 👋, I'm Valeria</h1>
-<h3 align="center">A passionate Full Stack Developer student from Argentina</h3>
-
-- 🔭 I’m currently working on several projects. 
-
-- 🌱 I’m currently learning **Full Stack Development**
+<h1 align="center">Valeria Paulina Lustres</h1>
+<h3 align="center">Front End Developer</h3>
 
 - 📫 How to reach me **valeriapaulinalustres@yahoo.com.ar**
 
