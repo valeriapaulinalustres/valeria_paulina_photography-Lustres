@@ -13,11 +13,17 @@ I´m Valeria Paulina Lustres. This is my photography website. I´m a Front End D
 -Bootstrap
 
 
-<h3 align="left">Features</h3>
+<h3 align="left">Features:</h3>
 
 -Browse different photography galleries,
 
--Choose photography sessions and load to cart.
+-Choose photography sessions and load to cart,
+
+-Responsive design.
+
+
+<h3 align="left">Here you can visit my app:</h3>
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
