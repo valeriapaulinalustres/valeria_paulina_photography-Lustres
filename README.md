@@ -19,7 +19,7 @@ I´m Valeria Paulina Lustres. This is my photography website. I´m a Front End D
 
 -Choose photography sessions and load to cart,
 
--iFrame (WhatsApp and Google Maps)
+-iFrame (WhatsApp and Google Maps),
 
 -Responsive design.
 
