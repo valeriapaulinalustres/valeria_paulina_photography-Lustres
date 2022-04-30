@@ -22,9 +22,6 @@ I´m Valeria Paulina Lustres. This is my photography website. I´m a Front End D
 -Responsive design.
 
 
-<h3 align="left">Here you can visit my app:</h3>
-
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <p>valeriapaulinalustres@yahoo.com.ar</p>
