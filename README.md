@@ -21,7 +21,11 @@ I´m Valeria Paulina Lustres. This is my photography website. I´m a Front End D
 
 -iFrame (WhatsApp and Google Maps),
 
--Responsive design.
+-Responsive design,
+
+-Animations in elements,
+
+-SEO.
 
 <h3 align="left">You can visit my app here:</h3>
 
